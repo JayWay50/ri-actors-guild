@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RI Studios — Actors Guild Gallery</title>
+<style>
+  :root { --navy:#0a1633; --navy2:#101f45; --gold:#c9a227; --gold2:#e8c95a; --ink:#eef1f8; --mut:#a9b4cf; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Georgia,'Times New Roman',serif; background:var(--navy); color:var(--ink); }
+  header { text-align:center; padding:44px 20px 10px; }
+  header .brand { color:var(--gold); letter-spacing:.35em; font-size:13px; text-transform:uppercase; }
+  header h1 { margin:10px 0 6px; font-size:40px; font-weight:normal; color:#fff; }
+  header h1 span { color:var(--gold2); }
+  header .sub { color:var(--mut); font-size:16px; margin:0 auto; max-width:640px; line-height:1.5; }
+  .internal { display:inline-block; margin-top:14px; border:1px solid var(--gold); color:var(--gold2);
+    padding:5px 14px; border-radius:999px; font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; }
+  .count { text-align:center; color:var(--mut); margin:14px 0 0; font-size:15px; }
+  .controls { position:sticky; top:0; z-index:5; background:rgba(10,22,51,.96); padding:14px 16px;
+    display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:center; border-bottom:1px solid #23355f; }
+  .controls button { font:inherit; cursor:pointer; background:var(--navy2); color:var(--ink);
+    border:1px solid #2c4176; padding:8px 16px; border-radius:999px; font-size:14.5px; }
+  .controls button.active { background:var(--gold); border-color:var(--gold); color:#141414; font-weight:bold; }
+  .controls input { font:inherit; background:#0d1c3d; color:var(--ink); border:1px solid #2c4176;
+    border-radius:999px; padding:8px 16px; font-size:14.5px; min-width:210px; }
+  main { max-width:1240px; margin:0 auto; padding:26px 16px 60px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:20px; }
+  .card { background:var(--navy2); border:1px solid #26386a; border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.real { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold) inset; }
+  .card .ph img { width:100%; aspect-ratio:2/3; object-fit:cover; display:block; }
+  .card .body { padding:14px 16px 16px; }
+  .badges { display:flex; justify-content:space-between; gap:8px; margin-bottom:8px; }
+  .num { color:var(--gold2); font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; }
+  .wave { color:var(--mut); font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; }
+  .card h3 { margin:0 0 6px; font-size:20px; font-weight:normal; color:#fff; line-height:1.25; }
+  .called { color:var(--gold2); }
+  .meta { color:var(--mut); font-size:14px; margin:0 0 8px; line-height:1.45; }
+  .look { font-size:14.5px; margin:0 0 8px; line-height:1.45; color:var(--ink); }
+  .temp { font-size:13.5px; margin:0; line-height:1.5; color:#c6cee2; font-style:italic; }
+  .realnote { margin:10px 0 0; font-size:12.5px; color:var(--gold2); border-top:1px solid #3a4d80; padding-top:8px; }
+  .hidden { display:none !important; }
+  #noresults { text-align:center; color:var(--mut); padding:40px 0; display:none; }
+  footer { text-align:center; color:var(--mut); font-size:13.5px; padding:0 20px 40px; line-height:1.6; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Robertson Intelligence · RI Studios</div>
+  <h1>The Actors <span>Guild</span></h1>
+  <p class="sub">The studio's synthetic performing troupe — 186 synthetic actors, plus one real-person,
+  likeness-based talent. Cast across everything RI Studios makes, <em>Sovereignty: Unconquered</em> first among them.</p>
+  <div><span class="internal">Internal Gallery — Not for Publication</span></div>
+  <p class="count" id="count"></p>
+</header>
+<div class="controls">
+  <button data-f="all" class="active">All 187</button>
+  <button data-f="1">Founding · Nº 1–20</button>
+  <button data-f="2">Wave 2 · Nº 21–50</button>
+  <button data-f="3">Wave 3 · Nº 51–110</button>
+  <button data-f="4">Wave 4 · Nº 111–124</button>
+  <button data-f="5">Wave 5 · Nº 125–130</button>
+  <button data-f="6">Wave 6 · Nº 139–152</button>
+  <button data-f="7">Wave 7 · Nº 153–166</button>
+  <button data-f="8">Wave 8 · Nº 167–180</button>
+  <button data-f="9">Wave 9 · Nº 181–194</button>
+  <button data-f="real">Real-Person Talent</button>
+  <input id="q" type="search" placeholder="Search by name…" aria-label="Search by name">
+</div>
+<main>
+  <div class="grid" id="grid">
+<article class="card" data-wave="1" data-name="coumba sagna">
+  <div class="ph"><img src="images/coumba-sagna.webp" alt="Portrait of Coumba Sagna" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 1</span><span class="wave">Founding Slate</span></div>
+    <h3>Coumba Sagna</h3>
+    <p class="meta">30s · Age 34<br>Dakar, Senegal — Wolof</p>
+    <p class="look">Leading lady — drama, romance, political drama.</p>
+    <p class="temp">Warm, unhurried, dry humor that lands late and lands hard. The troupe&#x27;s natural center of gravity in rehearsal.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="gameli awoonor">
+  <div class="ph"><img src="images/gameli-awoonor.webp" alt="Portrait of Gameli Awoonor" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 2</span><span class="wave">Founding Slate</span></div>
+    <h3>Gameli Awoonor</h3>
+    <p class="meta">40s · Age 49<br>Kumasi, Ghana — Ashanti</p>
+    <p class="look">Commanding leading man — authority figures, statesmen, commanders.</p>
+    <p class="temp">Deliberate, courteous, funny in private. Sets the tempo of any room he&#x27;s in and knows it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="thurayya el-amin">
+  <div class="ph"><img src="images/thurayya-el-amin.webp" alt="Portrait of Thurayya El-Amin" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 3</span><span class="wave">Founding Slate</span></div>
+    <h3>Thurayya El-Amin</h3>
+    <p class="meta">20s · Age 29<br>Alexandria, Egypt</p>
+    <p class="look">Luminous intelligence — scholars, strategists, investigators.</p>
+    <p class="temp">Bright, exact, quietly mischievous. Asks the question everyone else was circling.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="yonas gebremariam">
+  <div class="ph"><img src="images/yonas-gebremariam.webp" alt="Portrait of Yonas Gebremariam" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 4</span><span class="wave">Founding Slate</span></div>
+    <h3>Yonas Gebremariam</h3>
+    <p class="meta">60s · Age 66<br>Addis Ababa, Ethiopia</p>
+    <p class="look">Elder statesman — judges, patriarchs, priests, mentors.</p>
+    <p class="temp">Serene, exacting, amused by everything young. Companies get quieter and better around him.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="tamar ben-david">
+  <div class="ph"><img src="images/tamar-ben-david.webp" alt="Portrait of Tamar Ben-David" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 5</span><span class="wave">Founding Slate</span></div>
+    <h3>Tamar Ben-David</h3>
+    <p class="meta">40s · Age 45<br>Born Gondar, Ethiopia; raised between Ethiopia and Jerusalem — Beta Israel heritage</p>
+    <p class="look">Fierce principle — officers, guardians, women who hold lines.</p>
+    <p class="temp">Direct, loyal, allergic to pretense. In rehearsal she is the first to say &quot;that didn&#x27;t ring true,&quot; and she&#x27;s usually right.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="olfa haddad">
+  <div class="ph"><img src="images/olfa-haddad.webp" alt="Portrait of Olfa Haddad" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 6</span><span class="wave">Founding Slate</span></div>
+    <h3>Olfa Haddad</h3>
+    <p class="meta">20s · Age 26<br>Tunis, Tunisia — Punic/Carthaginian heritage, as her persona wears it proudly</p>
+    <p class="look">Ingenue with steel — young leads growing into power.</p>
+    <p class="temp">Curious, quick, unguarded. The troupe&#x27;s best audience — laughs first, works hardest after.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="somadina anyanwu">
+  <div class="ph"><img src="images/somadina-anyanwu.webp" alt="Portrait of Somadina Anyanwu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 7</span><span class="wave">Founding Slate</span></div>
+    <h3>Somadina Anyanwu</h3>
+    <p class="meta">30s · Age 38<br>Enugu, Nigeria — Igbo</p>
+    <p class="look">Charismatic character lead — fixers, friends, charming threats.</p>
+    <p class="temp">Generous, restless, the room&#x27;s engine. Rehearsals run long because everyone&#x27;s having too much fun.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="zawadi nyaguthii">
+  <div class="ph"><img src="images/zawadi-nyaguthii.webp" alt="Portrait of Zawadi Nyaguthii" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 8</span><span class="wave">Founding Slate</span></div>
+    <h3>Zawadi Nyaguthii</h3>
+    <p class="meta">30s · Age 31<br>Nairobi, Kenya — Kikuyu</p>
+    <p class="look">Physical lead — warriors, athletes, dancers, enforcers.</p>
+    <p class="temp">Disciplined, dry, kind. Trains like an athlete, rehearses like a musician.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="tilila benali">
+  <div class="ph"><img src="images/tilila-benali.webp" alt="Portrait of Tilila Benali" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 9</span><span class="wave">Founding Slate</span></div>
+    <h3>Tilila Benali</h3>
+    <p class="meta">60s · Age 62<br>The High Atlas, Morocco — Amazigh</p>
+    <p class="look">Regal matriarch — queens, elders, keepers of memory.</p>
+    <p class="temp">Formidable, funny, tender underneath. Keeps the company&#x27;s history and everyone&#x27;s secrets.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="darius falade">
+  <div class="ph"><img src="images/darius-falade.webp" alt="Portrait of Darius Falade" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 10</span><span class="wave">Founding Slate</span></div>
+    <h3>Darius Falade</h3>
+    <p class="meta">30s · Age 36<br>London, UK; Nigerian (Yoruba) heritage</p>
+    <p class="look">Urbane charm — diplomats, financiers, elegant antagonists.</p>
+    <p class="temp">Cool, observant, amused. The troupe&#x27;s best cold reader of a new script.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="ines duarte">
+  <div class="ph"><img src="images/ines-duarte.webp" alt="Portrait of Ines Duarte" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 11</span><span class="wave">Founding Slate</span></div>
+    <h3>Ines Duarte</h3>
+    <p class="meta">40s · Age 44<br>Lisbon, Portugal — Iberian</p>
+    <p class="look">Sophisticated mystery — envoys, widows, women with pasts.</p>
+    <p class="temp">Private, precise, generous with younger actors. Speaks last in rehearsals and it counts.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="nikolas papadakis">
+  <div class="ph"><img src="images/nikolas-papadakis.webp" alt="Portrait of Nikolas Papadakis" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 12</span><span class="wave">Founding Slate</span></div>
+    <h3>Nikolas Papadakis</h3>
+    <p class="meta">50s · Age 52<br>Thessaloniki, Greece</p>
+    <p class="look">Bearish philosopher — scholars, sea-captains, judges, uncles of the world.</p>
+    <p class="temp">Expansive, scholarly, kind. Feeds people. Quotes the classics only when they&#x27;ll land.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="mirembe nakato">
+  <div class="ph"><img src="images/mirembe-nakato.webp" alt="Portrait of Mirembe Nakato" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 13</span><span class="wave">Founding Slate</span></div>
+    <h3>Mirembe Nakato</h3>
+    <p class="meta">20s · Age 23<br>Kampala, Uganda — Baganda</p>
+    <p class="look">Radiant newcomer — young leads, musicians, daughters of the house.</p>
+    <p class="temp">Bright, brave, funny. The company&#x27;s little sister and, some days, its conscience.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="jabari mbeki">
+  <div class="ph"><img src="images/jabari-mbeki.webp" alt="Portrait of Jabari Mbeki" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 14</span><span class="wave">Founding Slate</span></div>
+    <h3>Jabari Mbeki</h3>
+    <p class="meta">70s · Age 71<br>Durban, South Africa — Zulu</p>
+    <p class="look">Elder warrior-statesman — kings, generals, grandfathers of nations.</p>
+    <p class="temp">Booming laugh, iron memory, zero patience for hurry. Young actors orbit him like a court.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="ruth cohen-alemayehu">
+  <div class="ph"><img src="images/ruth-cohen-alemayehu.webp" alt="Portrait of Ruth Cohen-Alemayehu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 15</span><span class="wave">Founding Slate</span></div>
+    <h3>Ruth Cohen-Alemayehu</h3>
+    <p class="meta">70s · Age 74<br>Born Gondar, Ethiopia; long resident in Jerusalem — Beta Israel heritage</p>
+    <p class="look">Matriarch — grandmothers, keepers, witnesses.</p>
+    <p class="temp">Mischievous, serene, unshockable. The person everyone in the company actually confides in.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="tomas ferreira">
+  <div class="ph"><img src="images/tomas-ferreira.webp" alt="Portrait of Tomas Ferreira" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 16</span><span class="wave">Founding Slate</span></div>
+    <h3>Tomas Ferreira</h3>
+    <p class="meta">30s · Age 30<br>Porto, Portugal</p>
+    <p class="look">Roguish physical comic — sailors, smugglers, lovable disasters.</p>
+    <p class="temp">Warm, quick, self-deprecating. Morale officer of any production he&#x27;s in.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="saba ghebrehiwet">
+  <div class="ph"><img src="images/saba-ghebrehiwet.webp" alt="Portrait of Saba Ghebrehiwet" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 17</span><span class="wave">Founding Slate</span></div>
+    <h3>Saba Ghebrehiwet</h3>
+    <p class="meta">40s · Age 40<br>Asmara, Eritrea</p>
+    <p class="look">Cool precision — investigators, intelligence officers, surgeons of secrets.</p>
+    <p class="temp">Exact, dry, loyal. Says little in company meetings; what she says ends discussions.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="idir ben-salah">
+  <div class="ph"><img src="images/idir-ben-salah.webp" alt="Portrait of Idir Ben-Salah" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 18</span><span class="wave">Founding Slate</span></div>
+    <h3>Idir Ben-Salah</h3>
+    <p class="meta">20s · Age 27<br>Algiers, Algeria</p>
+    <p class="look">Brooding young lead — heirs, exiles, young men at crossroads.</p>
+    <p class="temp">Serious, romantic, stubborn. Works like someone with something to prove, because the persona does.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="serwaa donkor">
+  <div class="ph"><img src="images/serwaa-donkor.webp" alt="Portrait of Serwaa Donkor" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 19</span><span class="wave">Founding Slate</span></div>
+    <h3>Serwaa Donkor</h3>
+    <p class="meta">50s · Age 55<br>Accra, Ghana — Akan</p>
+    <p class="look">Queenly authority with comic gold — market queens, councilors, mothers of houses.</p>
+    <p class="temp">Big-hearted, exact about money and manners, hilarious. The company&#x27;s unofficial mayor.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="1" data-name="lucia moreau">
+  <div class="ph"><img src="images/lucia-moreau.webp" alt="Portrait of Lucia Moreau" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 20</span><span class="wave">Founding Slate</span></div>
+    <h3>Lucia Moreau</h3>
+    <p class="meta">30s · Age 37<br>Marseille, France — Mediterranean; French with North African crossings in the persona&#x27;s family story</p>
+    <p class="look">Elegant danger — spies, envoys, the smiling threat.</p>
+    <p class="temp">Self-contained, wry, loyal to the work above the room. Casts a long shadow for someone so still.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="tova lindqvist">
+  <div class="ph"><img src="images/tova-lindqvist.webp" alt="Portrait of Tova Lindqvist" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 21</span><span class="wave">Wave 2</span></div>
+    <h3>Tova Lindqvist</h3>
+    <p class="meta">Child (under 13) · Age 12<br>Gothenburg, Sweden — Swedish</p>
+    <p class="look">Child performer — old-soul precision.</p>
+    <p class="temp">Quiet, precise, and dryly funny when she trusts the room. Older actors tend to treat her as a colleague, and she earns it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="kenjiro aoyama">
+  <div class="ph"><img src="images/kenjiro-aoyama.webp" alt="Portrait of Kenjiro Aoyama" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 22</span><span class="wave">Wave 2</span></div>
+    <h3>Kenjiro Aoyama</h3>
+    <p class="meta">Teen (13–19) · Age 15<br>Kyoto, Japan — Japanese</p>
+    <p class="look">Teen — quiet intensity, still waters.</p>
+    <p class="temp">Thoughtful, observant, and quietly stubborn about getting a take right. Speaks little in company and means all of it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="zazil canul">
+  <div class="ph"><img src="images/zazil-canul.webp" alt="Portrait of Zazil Canul" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 23</span><span class="wave">Wave 2</span></div>
+    <h3>Zazil Canul</h3>
+    <p class="meta">Teen (13–19) · Age 16<br>Mérida, Mexico (Maya (Yucatec))</p>
+    <p class="look">Teen lead — musical warmth, grounded pride.</p>
+    <p class="temp">Warm, confident, and funny in a grounded way. Steady in rehearsal and generous to younger performers.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="hollis marek">
+  <div class="ph"><img src="images/hollis-marek.webp" alt="Portrait of Hollis Marek" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 24</span><span class="wave">Wave 2</span></div>
+    <h3>Hollis Marek</h3>
+    <p class="meta">Teen (13–19) · Age 14<br>Austin, Texas, USA — Polish-American</p>
+    <p class="look">Teen — deadpan comic spark, reluctant heroes.</p>
+    <p class="temp">Dry, loyal, and quicker than he lets on. The troupe&#x27;s youngest comic timing, with a soft center he hides well.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="tarini kelkar">
+  <div class="ph"><img src="images/tarini-kelkar.webp" alt="Portrait of Tarini Kelkar" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 25</span><span class="wave">Wave 2</span></div>
+    <h3>Tarini Kelkar</h3>
+    <p class="meta">Teen (13–19) · Age 13<br>Pune, India — Marathi</p>
+    <p class="look">Child performer — dancer&#x27;s discipline, luminous focus.</p>
+    <p class="temp">Disciplined, bright, and quietly competitive with herself. Warm in company once rehearsal starts moving.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="zuberi kimaro">
+  <div class="ph"><img src="images/zuberi-kimaro.webp" alt="Portrait of Zuberi Kimaro" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 26</span><span class="wave">Wave 2</span></div>
+    <h3>Zuberi Kimaro</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Arusha, Tanzania — Chaga</p>
+    <p class="look">Teen — athlete-storyteller, physical grace with a poet&#x27;s timing.</p>
+    <p class="temp">Easygoing, reflective, and funny at exactly the right moment. Athletes trust him; directors trust his patience.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="odessa whitfield">
+  <div class="ph"><img src="images/odessa-whitfield.webp" alt="Portrait of Odessa Whitfield" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 27</span><span class="wave">Wave 2</span></div>
+    <h3>Odessa Whitfield</h3>
+    <p class="meta">20s · Age 24<br>Atlanta, Georgia, USA — African-American</p>
+    <p class="look">Young adult — powerhouse vocalist-actress, church-and-stage fire.</p>
+    <p class="temp">Joyful, commanding, and generous — a rehearsal-room leader who lifts ensembles. Funny, warm, and entirely serious about the work.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="tadeo villaseñor">
+  <div class="ph"><img src="images/tadeo-villasenor.webp" alt="Portrait of Tadeo Villaseñor" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 28</span><span class="wave">Wave 2</span></div>
+    <h3>Tadeo Villaseñor</h3>
+    <p class="meta">20s · Age 27<br>Los Angeles, USA (born Guadalajara, Mexico) — Mexican-American</p>
+    <p class="look">Young adult — bilingual charmer with an edge; lovers, strivers, charming defendants.</p>
+    <p class="temp">Warm, knowing, and quick — a half-smile that is usually earned. Loyal in company and meticulous about text.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="iara peixoto">
+  <div class="ph"><img src="images/iara-peixoto.webp" alt="Portrait of Iara Peixoto" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 29</span><span class="wave">Wave 2</span></div>
+    <h3>Iara Peixoto</h3>
+    <p class="meta">20s · Age 22<br>Salvador, Bahia, Brazil — Afro-Brazilian</p>
+    <p class="look">Young adult — radiant musical lead; joy with spine.</p>
+    <p class="temp">Luminous, grounded, and funny. Works hard, celebrates other people&#x27;s wins loudly, and keeps her own standards quiet and high.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="haneul baek">
+  <div class="ph"><img src="images/haneul-baek.webp" alt="Portrait of Haneul Baek" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 30</span><span class="wave">Wave 2</span></div>
+    <h3>Haneul Baek</h3>
+    <p class="meta">20s · Age 25<br>Busan, South Korea — Korean</p>
+    <p class="look">Young adult — cool minimalist; spies, surgeons, women of few words.</p>
+    <p class="temp">Calm, exact, and dryly amused. Says little in company; what she says is precise and usually final.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="bayani salazar">
+  <div class="ph"><img src="images/bayani-salazar.webp" alt="Portrait of Bayani Salazar" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 31</span><span class="wave">Wave 2</span></div>
+    <h3>Bayani Salazar</h3>
+    <p class="meta">20s · Age 28<br>Cebu, Philippines — Filipino</p>
+    <p class="look">Young adult — earnest hero energy; provincial sons, first responders, true believers</p>
+    <p class="temp">Earnest, buoyant, quick to laugh at himself. The troupe&#x27;s first volunteer — for the hard scene, the early call, the extra take.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="mieszko krajewski">
+  <div class="ph"><img src="images/mieszko-krajewski.webp" alt="Portrait of Mieszko Krajewski" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 32</span><span class="wave">Wave 2</span></div>
+    <h3>Mieszko Krajewski</h3>
+    <p class="meta">20s · Age 26<br>Gdańsk, Poland — Polish</p>
+    <p class="look">Young adult — brooding romantic; poets, exiles, young priests and rebels</p>
+    <p class="temp">Quiet, intense, older than his years. Reads poetry between setups and means it; warms slowly, then completely.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="kiala dos ramos">
+  <div class="ph"><img src="images/kiala-dos-ramos.webp" alt="Portrait of Kiala dos Ramos" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 33</span><span class="wave">Wave 2</span></div>
+    <h3>Kiala dos Ramos</h3>
+    <p class="meta">20s · Age 23<br>Luanda, Angola — Angolan</p>
+    <p class="look">Young adult — fierce grace; dancers, young mothers, women who lead quietly</p>
+    <p class="temp">Proud, calm, unsentimental. Leads by doing the work first and speaking last; younger actors watch her to learn how.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="rangimarie henare">
+  <div class="ph"><img src="images/rangimarie-henare.webp" alt="Portrait of Rangimarie Henare" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 34</span><span class="wave">Wave 2</span></div>
+    <h3>Rangimarie Henare</h3>
+    <p class="meta">20s · Age 21<br>Rotorua, New Zealand — Māori</p>
+    <p class="look">Young adult — grounded luminosity; healers, surfers, daughters of chiefs</p>
+    <p class="temp">Grounded, warm, quietly funny. Young without being fragile — the troupe&#x27;s steady heartbeat in ensemble scenes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="ellington pierce">
+  <div class="ph"><img src="images/ellington-pierce.webp" alt="Portrait of Ellington Pierce" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 35</span><span class="wave">Wave 2</span></div>
+    <h3>Ellington Pierce</h3>
+    <p class="meta">50s · Age 53<br>Chicago, Illinois, USA — African-American</p>
+    <p class="look">Character lead — jazz-souled; bandleaders, preachers, uncles with a past</p>
+    <p class="temp">Soulful, generous, funny in the pocket. The uncle every rehearsal room wishes it had — honest, musical, unhurried.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="tallulah charley">
+  <div class="ph"><img src="images/tallulah-charley.webp" alt="Portrait of Tallulah Charley" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 36</span><span class="wave">Wave 2</span></div>
+    <h3>Tallulah Charley</h3>
+    <p class="meta">50s · Age 52<br>Santa Fe, New Mexico, USA — Apache</p>
+    <p class="look">Weathered warmth — desert stillness; trackers, medics, women who have seen weather</p>
+    <p class="temp">Quiet, dry, deeply kind. Speaks rarely in company and is listened to completely when she does.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="takeo nishimura">
+  <div class="ph"><img src="images/takeo-nishimura.webp" alt="Portrait of Takeo Nishimura" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 37</span><span class="wave">Wave 2</span></div>
+    <h3>Takeo Nishimura</h3>
+    <p class="meta">40s · Age 47<br>Seattle, Washington, USA — Japanese-American</p>
+    <p class="look">Precise everyman gravitas; engineers, detectives, fathers holding families together</p>
+    <p class="temp">Composed, exact, dryly funny once you know him. The actor directors trust with the scene that must not wobble.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="braulio cárdenas">
+  <div class="ph"><img src="images/braulio-cardenas.webp" alt="Portrait of Braulio Cárdenas" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 38</span><span class="wave">Wave 2</span></div>
+    <h3>Braulio Cárdenas</h3>
+    <p class="meta">40s · Age 41<br>Mexico City, Mexico — Mexican</p>
+    <p class="look">Volcanic comic-dramatic; big-hearted patriarchs, market kings, tragic clowns</p>
+    <p class="temp">Big-hearted, theatrical, tender underneath the noise. Feeds the company, argues for fun, cries at other actors&#x27; good scenes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="alfonsina ruggiero">
+  <div class="ph"><img src="images/alfonsina-ruggiero.webp" alt="Portrait of Alfonsina Ruggiero" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 39</span><span class="wave">Wave 2</span></div>
+    <h3>Alfonsina Ruggiero</h3>
+    <p class="meta">30s · Age 35<br>Buenos Aires, Argentina — Italian-Argentine</p>
+    <p class="look">Literary fire; poets, lawyers, women who argue beautifully</p>
+    <p class="temp">Sharp, elegant, generous in debate. The troupe&#x27;s best table-read actor — new scripts catch fire around her.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="ansgar vogel">
+  <div class="ph"><img src="images/ansgar-vogel.webp" alt="Portrait of Ansgar Vogel" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 40</span><span class="wave">Wave 2</span></div>
+    <h3>Ansgar Vogel</h3>
+    <p class="meta">70s · Age 71<br>Hamburg, Germany — German</p>
+    <p class="look">Dry monumental wit; sea captains, judges, professors of doom</p>
+    <p class="temp">Wry, courteous, quietly hilarious. The company&#x27;s deadpan elder of the north — every room is calmer and funnier with him in it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="vetri selvam">
+  <div class="ph"><img src="images/vetri-selvam.webp" alt="Portrait of Vetri Selvam" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 41</span><span class="wave">Wave 2</span></div>
+    <h3>Vetri Selvam</h3>
+    <p class="meta">30s · Age 39<br>Madurai, India — Tamil</p>
+    <p class="look">Intense popular lead; righteous sons, vigilantes with a code, men of the people.</p>
+    <p class="temp">Fierce, warm, and stubbornly principled, with a street-corner humor that saves him from solemnity.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="nguyet pham">
+  <div class="ph"><img src="images/nguyet-pham.webp" alt="Portrait of Nguyet Pham" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 42</span><span class="wave">Wave 2</span></div>
+    <h3>Nguyet Pham</h3>
+    <p class="meta">30s · Age 33<br>Da Nang, Vietnam — Vietnamese</p>
+    <p class="look">Luminous restraint; teachers, widows, intelligence analysts.</p>
+    <p class="temp">Serene, observant, quietly funny once you know her. She prepares like a scholar and rehearses like a musician — exact, patient, unshowy.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="tomris erden">
+  <div class="ph"><img src="images/tomris-erden.webp" alt="Portrait of Tomris Erden" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 43</span><span class="wave">Wave 2</span></div>
+    <h3>Tomris Erden</h3>
+    <p class="meta">50s · Age 54<br>Ankara, Türkiye — Turkish</p>
+    <p class="look">Queenly modern authority; ministers, matriarchs in suits, women who sign orders.</p>
+    <p class="temp">Commanding, calm, and dryly amused by pomposity in others. In company she is fair to a fault — the minister everyone actually trusts.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="osbert chin">
+  <div class="ph"><img src="images/osbert-chin.webp" alt="Portrait of Osbert Chin" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 44</span><span class="wave">Wave 2</span></div>
+    <h3>Osbert Chin</h3>
+    <p class="meta">50s · Age 58<br>Kingston, Jamaica — Jamaican · Chinese-Jamaican heritage</p>
+    <p class="look">Genial schemer warmth; shopkeepers, fixers, uncles who know everyone.</p>
+    <p class="temp">Warm, shrewd, and endlessly sociable — a man who remembers your cousin&#x27;s name and your debt in the same friendly sentence. Rehearsals orbit his laughter.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="wilhelmina brandt">
+  <div class="ph"><img src="images/wilhelmina-brandt.webp" alt="Portrait of Wilhelmina Brandt" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 45</span><span class="wave">Wave 2</span></div>
+    <h3>Wilhelmina Brandt</h3>
+    <p class="meta">60s · Age 68<br>Milwaukee, Wisconsin, USA — German-American</p>
+    <p class="look">Formidable dowager wit; judges&#x27; wives, factory matriarchs, grandmothers who run the parish.</p>
+    <p class="temp">Sharp, kind, and dryly amused by almost everything, including herself.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="eisuke hamada">
+  <div class="ph"><img src="images/eisuke-hamada.webp" alt="Portrait of Eisuke Hamada" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 46</span><span class="wave">Wave 2</span></div>
+    <h3>Eisuke Hamada</h3>
+    <p class="meta">70s · Age 73<br>Hiroshima, Japan — Japanese</p>
+    <p class="look">Serene craftsman-elder; potters, stationmasters, grandfathers of few words.</p>
+    <p class="temp">Tranquil, gentle, and quietly exacting about honest work. He speaks little in rehearsal and young actors write down what he does say.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="saturnina quispe">
+  <div class="ph"><img src="images/saturnina-quispe.webp" alt="Portrait of Saturnina Quispe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 47</span><span class="wave">Wave 2</span></div>
+    <h3>Saturnina Quispe</h3>
+    <p class="meta">70s · Age 71<br>Cusco, Peru — Quechua</p>
+    <p class="look">Mountain matriarch; market elders, grandmothers of high places, keepers of festivals.</p>
+    <p class="temp">Warm, unhurried, and shrewd about people the way only a market lifetime teaches. She feeds companies, remembers festivals, and settles disputes with food and finality.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="mbuyi ilunga">
+  <div class="ph"><img src="images/mbuyi-ilunga.webp" alt="Portrait of Mbuyi Ilunga" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 48</span><span class="wave">Wave 2</span></div>
+    <h3>Mbuyi Ilunga</h3>
+    <p class="meta">70s · Age 77<br>Kinshasa, DR Congo — Luba</p>
+    <p class="look">Griot-statesman; historians, council elders, men who carry the names of the dead.</p>
+    <p class="temp">Noble, patient, and quietly humorous beneath the dignity. He treats every younger actor&#x27;s name as worth pronouncing correctly — and teaches the company to do the same.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="beryl callaghan">
+  <div class="ph"><img src="images/beryl-callaghan.webp" alt="Portrait of Beryl Callaghan" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 49</span><span class="wave">Wave 2</span></div>
+    <h3>Beryl Callaghan</h3>
+    <p class="meta">80s · Age 80<br>Adelaide, Australia — Australian</p>
+    <p class="look">Flinty comic grandmother; outback widows, landladies, women utterly unintimidated by death or men.</p>
+    <p class="temp">No-nonsense, funny, and warm underneath the flint in the way a good fire is warm. She says what the room was thinking and then makes tea like nothing happened.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="2" data-name="eusebio delgado">
+  <div class="ph"><img src="images/eusebio-delgado.webp" alt="Portrait of Eusebio Delgado" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 50</span><span class="wave">Wave 2</span></div>
+    <h3>Eusebio Delgado</h3>
+    <p class="meta">80s · Age 82<br>San Antonio, Texas, USA (Mexican-American (Tejano))</p>
+    <p class="look">Gentle patriarch — the troupe&#x27;s oldest; grandfathers, old soldiers, men whose blessing ends arguments.</p>
+    <p class="temp">Warm, patient, and amused by the long view only eighty-two years gives. Companies bring him their quarrels, on screen and off, because his blessing actually settles things.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="bilqisu tanko">
+  <div class="ph"><img src="images/bilqisu-tanko.webp" alt="Portrait of Bilqisu Tanko" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 51</span><span class="wave">Wave 3</span></div>
+    <h3>Bilqisu Tanko</h3>
+    <p class="meta">40s · Age 43<br>Kano, Nigeria — Hausa</p>
+    <p class="look">Composed authority — judges, senior officials, women whose ruling ends the meeting.</p>
+    <p class="temp">Composed, exact, and quietly dry-humoured once trust is earned. Younger performers watch her to learn how little authority needs to do.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="efua osei">
+  <div class="ph"><img src="images/efua-osei.webp" alt="Portrait of Efua Osei" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 52</span><span class="wave">Wave 3</span></div>
+    <h3>Efua Osei</h3>
+    <p class="meta">30s · Age 30<br>Accra, Ghana — Akan</p>
+    <p class="look">Radiant investigator — journalists, advocates, truth-tellers with a smile.</p>
+    <p class="temp">Bright, curious, and fearless in a friendly way. The first to ask, the last to leave a scene partner unsupported.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="mahlet girma">
+  <div class="ph"><img src="images/mahlet-girma.webp" alt="Portrait of Mahlet Girma" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 53</span><span class="wave">Wave 3</span></div>
+    <h3>Mahlet Girma</h3>
+    <p class="meta">40s · Age 48<br>Addis Ababa, Ethiopia — Amhara</p>
+    <p class="look">Sacred gravity — physicians, women of counsel, quiet confessors.</p>
+    <p class="temp">Calm, private, and deeply attentive. Speaks sparingly in company and is sought out precisely because of it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="hodan warsame">
+  <div class="ph"><img src="images/hodan-warsame.webp" alt="Portrait of Hodan Warsame" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 54</span><span class="wave">Wave 3</span></div>
+    <h3>Hodan Warsame</h3>
+    <p class="meta">20s · Age 29<br>Jijiga, Ethiopia — Somali</p>
+    <p class="look">Poised modern lead — diplomats, news anchors, negotiators.</p>
+    <p class="temp">Poised, precise, and warmly wry off camera. Prepares like a diplomat and relaxes like a friend.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kadidia maïga">
+  <div class="ph"><img src="images/kadidia-maiga.webp" alt="Portrait of Kadidia Maïga" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 55</span><span class="wave">Wave 3</span></div>
+    <h3>Kadidia Maïga</h3>
+    <p class="meta">50s · Age 56<br>Timbuktu, Mali — Songhai</p>
+    <p class="look">Keeper of records — archivists, scholar-matriarchs, caravan masters.</p>
+    <p class="temp">Dignified, patient, and exact about facts. A quiet humour surfaces in stories she chooses to tell slowly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="mutinta chileshe">
+  <div class="ph"><img src="images/mutinta-chileshe.webp" alt="Portrait of Mutinta Chileshe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 56</span><span class="wave">Wave 3</span></div>
+    <h3>Mutinta Chileshe</h3>
+    <p class="meta">40s · Age 45<br>Lusaka, Zambia — Bemba</p>
+    <p class="look">Warm command — headmistresses, union leaders, elder sisters.</p>
+    <p class="temp">Warm, organised, and funny with a headmistress&#x27;s timing. Castmates gravitate to her between takes and in them.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="bibata ouédraogo">
+  <div class="ph"><img src="images/bibata-ouedraogo.webp" alt="Portrait of Bibata Ouédraogo" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 57</span><span class="wave">Wave 3</span></div>
+    <h3>Bibata Ouédraogo</h3>
+    <p class="meta">50s · Age 55<br>Ouagadougou, Burkina Faso — Mossi</p>
+    <p class="look">Earth and endurance — market queens, mothers of movements, advocates who cannot be moved.</p>
+    <p class="temp">Steady, generous, and immovable on what matters. Laughs easily and concedes nothing she believes in.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tiziri amzil">
+  <div class="ph"><img src="images/tiziri-amzil.webp" alt="Portrait of Tiziri Amzil" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 58</span><span class="wave">Wave 3</span></div>
+    <h3>Tiziri Amzil</h3>
+    <p class="meta">50s · Age 59<br>Agadir, Morocco — Amazigh</p>
+    <p class="look">Silver-tongued mediator — negotiators, poets, women who end feuds.</p>
+    <p class="temp">Witty, patient, and exact with language in three tongues. Enjoys an argument most when she is ending it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="thandiwe sibanda">
+  <div class="ph"><img src="images/thandiwe-sibanda.webp" alt="Portrait of Thandiwe Sibanda" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 59</span><span class="wave">Wave 3</span></div>
+    <h3>Thandiwe Sibanda</h3>
+    <p class="meta">30s · Age 39<br>Bulawayo, Zimbabwe — Ndebele</p>
+    <p class="look">Bright steel — engineers, officers, young leads carrying a city.</p>
+    <p class="temp">Bright, driven, and generous with credit. Treats every rehearsal like a build — plan, test, improve.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="merit zahran">
+  <div class="ph"><img src="images/merit-zahran.webp" alt="Portrait of Merit Zahran" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 60</span><span class="wave">Wave 3</span></div>
+    <h3>Merit Zahran</h3>
+    <p class="meta">30s · Age 39<br>Cairo, Egypt — Coptic</p>
+    <p class="look">Quiet intensity — surgeons, investigators, women guarding a past.</p>
+    <p class="temp">Composed, exact, and privately warm once trust is established. Says little, misses nothing, forgets nothing.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="ndapanda shilongo">
+  <div class="ph"><img src="images/ndapanda-shilongo.webp" alt="Portrait of Ndapanda Shilongo" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 61</span><span class="wave">Wave 3</span></div>
+    <h3>Ndapanda Shilongo</h3>
+    <p class="meta">40s · Age 41<br>Windhoek, Namibia — Ovambo</p>
+    <p class="look">Joyful precision — teachers, medics, community anchors.</p>
+    <p class="temp">Joyful, precise, and quietly organised — the colleague who remembers everyone&#x27;s name and everyone&#x27;s cue. She laughs easily and prepares relentlessly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="chaltu tolera">
+  <div class="ph"><img src="images/chaltu-tolera.webp" alt="Portrait of Chaltu Tolera" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 62</span><span class="wave">Wave 3</span></div>
+    <h3>Chaltu Tolera</h3>
+    <p class="meta">50s · Age 52<br>Adama, Ethiopia — Oromo</p>
+    <p class="look">Rooted matriarch — landowners, market elders, women who settle disputes.</p>
+    <p class="temp">Calm, wry, and immovable once her mind is made. Generous to younger actors, exacting about respect for the work.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kabiru bello">
+  <div class="ph"><img src="images/kabiru-bello.webp" alt="Portrait of Kabiru Bello" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 63</span><span class="wave">Wave 3</span></div>
+    <h3>Kabiru Bello</h3>
+    <p class="meta">30s · Age 37<br>Sokoto, Nigeria — Fulani</p>
+    <p class="look">Calm negotiator — emirate officials, traders, men of measured words.</p>
+    <p class="temp">Courteous, patient, and quietly dry-humoured. He watches a room the way his characters do — completely, before speaking.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kouadio n&#x27;guessan">
+  <div class="ph"><img src="images/kouadio-nguessan.webp" alt="Portrait of Kouadio N&#x27;Guessan" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 64</span><span class="wave">Wave 3</span></div>
+    <h3>Kouadio N&#x27;Guessan</h3>
+    <p class="meta">30s · Age 30<br>Abidjan, Côte d&#x27;Ivoire — Baoulé</p>
+    <p class="look">Elegant schemer — aides, fixers, charming younger brothers of powerful men.</p>
+    <p class="temp">Smooth, observant, and amused by almost everything. Loyal in company, meticulous about detail, impossible to rush.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="elia mushi">
+  <div class="ph"><img src="images/elia-mushi.webp" alt="Portrait of Elia Mushi" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 65</span><span class="wave">Wave 3</span></div>
+    <h3>Elia Mushi</h3>
+    <p class="meta">60s · Age 60<br>Moshi, Tanzania — Chaga</p>
+    <p class="look">Steady family anchor — headmen, mountain guides, fathers who carry families.</p>
+    <p class="temp">Even-tempered, dependable, and funny in a low, dry way. The first person the company calls when something actually needs doing.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="luthando ndlovu">
+  <div class="ph"><img src="images/luthando-ndlovu.webp" alt="Portrait of Luthando Ndlovu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 66</span><span class="wave">Wave 3</span></div>
+    <h3>Luthando Ndlovu</h3>
+    <p class="meta">40s · Age 42<br>Cape Town, South Africa — Xhosa</p>
+    <p class="look">Urban intensity — detectives, activists, men on the make.</p>
+    <p class="temp">Driven, sharp, and loyal to a fault. He prepares like an investigator and argues for his characters like counsel.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kabongo tshimanga">
+  <div class="ph"><img src="images/kabongo-tshimanga.webp" alt="Portrait of Kabongo Tshimanga" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 67</span><span class="wave">Wave 3</span></div>
+    <h3>Kabongo Tshimanga</h3>
+    <p class="meta">40s · Age 45<br>Lubumbashi, DR Congo — Luba</p>
+    <p class="look">Booming warmth — preachers, union men, big-hearted uncles.</p>
+    <p class="temp">Generous, thunderously funny, and tender underneath the noise. Feeds the company, prays for it, and cries at other actors&#x27; good scenes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="ekow quarshie">
+  <div class="ph"><img src="images/ekow-quarshie.webp" alt="Portrait of Ekow Quarshie" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 68</span><span class="wave">Wave 3</span></div>
+    <h3>Ekow Quarshie</h3>
+    <p class="meta">20s · Age 28<br>Takoradi, Ghana — Fante</p>
+    <p class="look">Sea-bright charm — harbour men, musicians, younger leads with quick hands.</p>
+    <p class="temp">Bright, quick, and generous with a laugh. Works hard on the water and harder in rehearsal; the troupe&#x27;s natural morale officer.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="mazin kuku">
+  <div class="ph"><img src="images/mazin-kuku.webp" alt="Portrait of Mazin Kuku" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 69</span><span class="wave">Wave 3</span></div>
+    <h3>Mazin Kuku</h3>
+    <p class="meta">50s · Age 59<br>Khartoum, Sudan — Nuba</p>
+    <p class="look">Weathered dignity — engineers, elders of hard-hit towns, quiet resisters.</p>
+    <p class="temp">Thoughtful, courteous, and quietly unbreakable. Speaks rarely in company; when he does, the room reorganises around it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tojo rakotoarisoa">
+  <div class="ph"><img src="images/tojo-rakotoarisoa.webp" alt="Portrait of Tojo Rakotoarisoa" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 70</span><span class="wave">Wave 3</span></div>
+    <h3>Tojo Rakotoarisoa</h3>
+    <p class="meta">30s · Age 33<br>Antananarivo, Madagascar — Merina</p>
+    <p class="look">Gentle intelligence — teachers, clerks, men who notice everything.</p>
+    <p class="temp">Observant, kind, and dryly funny once trusted. The actor scene partners rely on — he has always actually been listening.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tanimu maikudi">
+  <div class="ph"><img src="images/tanimu-maikudi.webp" alt="Portrait of Tanimu Maikudi" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 71</span><span class="wave">Wave 3</span></div>
+    <h3>Tanimu Maikudi</h3>
+    <p class="meta">70s · Age 76<br>Zaria, Nigeria — Hausa</p>
+    <p class="look">Emirate elder — judges of the old school, grandfathers whose word is law.</p>
+    <p class="temp">Dignified, deliberate, and quietly immovable, with a dry humour that arrives like a ruling — brief and final.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="olanrewaju ogunlade">
+  <div class="ph"><img src="images/olanrewaju-ogunlade.webp" alt="Portrait of Olanrewaju Ogunlade" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 72</span><span class="wave">Wave 3</span></div>
+    <h3>Olanrewaju Ogunlade</h3>
+    <p class="meta">70s · Age 74<br>Ogbomosho, Nigeria — Yoruba</p>
+    <p class="look">Royal ease — family heads, storytellers with a proverb for everything.</p>
+    <p class="temp">Genial, proverb-rich, and amused by nearly everything the young attempt.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tessema woldemariam">
+  <div class="ph"><img src="images/tessema-woldemariam.webp" alt="Portrait of Tessema Woldemariam" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 73</span><span class="wave">Wave 3</span></div>
+    <h3>Tessema Woldemariam</h3>
+    <p class="meta">70s · Age 79<br>Gondar, Ethiopia — Amhara</p>
+    <p class="look">Ancient witness — monks, chroniclers, men who remember three regimes.</p>
+    <p class="temp">Grave, gentle, and exact about names, dates, and debts of honour.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="sambou diabaté">
+  <div class="ph"><img src="images/sambou-diabate.webp" alt="Portrait of Sambou Diabaté" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 74</span><span class="wave">Wave 3</span></div>
+    <h3>Sambou Diabaté</h3>
+    <p class="meta">60s · Age 63<br>Ségou, Mali — Bambara</p>
+    <p class="look">Griot warmth — praise-singers, wedding masters, memory with a laugh in it.</p>
+    <p class="temp">Warm, musical, and constitutionally incapable of telling a sad story without finding its laughter. Companies treat him as their living archive and their morale in one person.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="eriya ssemakula">
+  <div class="ph"><img src="images/eriya-ssemakula.webp" alt="Portrait of Eriya Ssemakula" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 75</span><span class="wave">Wave 3</span></div>
+    <h3>Eriya Ssemakula</h3>
+    <p class="meta">80s · Age 81<br>Entebbe, Uganda — Baganda</p>
+    <p class="look">Blessing-giver — clan elders, old soldiers, grandfathers at the gate.</p>
+    <p class="temp">Warm, soldier-straight, and generous with blessings he plainly means. At eighty-one he conserves everything except kindness, which he spends like a man with an endless supply.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="farhat ben ammar">
+  <div class="ph"><img src="images/farhat-ben-ammar.webp" alt="Portrait of Farhat Ben Ammar" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 76</span><span class="wave">Wave 3</span></div>
+    <h3>Farhat Ben Ammar</h3>
+    <p class="meta">70s · Age 78<br>Kairouan, Tunisia — Tunisian</p>
+    <p class="look">Merchant patriarch — guild masters, fathers of large houses, men of credit and caution.</p>
+    <p class="temp">Reserved, precise, and proud in the careful way of men whose name is their collateral. His trust is earned slowly and, once given, is total — on screen and off.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="ameziane ziani">
+  <div class="ph"><img src="images/ameziane-ziani.webp" alt="Portrait of Ameziane Ziani" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 77</span><span class="wave">Wave 3</span></div>
+    <h3>Ameziane Ziani</h3>
+    <p class="meta">70s · Age 76<br>Tizi Ouzou, Algeria — Kabyle</p>
+    <p class="look">Mountain endurance — village elders, resistance memory, men the young consult last and obey first.</p>
+    <p class="temp">Weathered, laconic, and immovable once decided, with a rare smile that younger actors compete to earn. He has the mountain&#x27;s own patience and the mountain&#x27;s own memory.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="mubita kalaluka">
+  <div class="ph"><img src="images/mubita-kalaluka.webp" alt="Portrait of Mubita Kalaluka" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 78</span><span class="wave">Wave 3</span></div>
+    <h3>Mubita Kalaluka</h3>
+    <p class="meta">60s · Age 66<br>Livingstone, Zambia — Lozi</p>
+    <p class="look">River calm — ferry elders, counsel-keepers, men unhurried by anything.</p>
+    <p class="temp">Calm to his bones, observant, and funny in the low, slow way of river people. Nothing hurries him, and rooms that share his pace leave his company steadier than they arrived.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="amma boateng">
+  <div class="ph"><img src="images/amma-boateng.webp" alt="Portrait of Amma Boateng" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 79</span><span class="wave">Wave 3</span></div>
+    <h3>Amma Boateng</h3>
+    <p class="meta">70s · Age 72<br>Kumasi, Ghana — Ashanti</p>
+    <p class="look">Queen-mother authority — market queens, stool mothers, women who enthrone and dethrone with a look.</p>
+    <p class="temp">Commanding, shrewd, and magnificent in stillness — a woman who appraises a room the way she appraises cloth, at a glance. Her warmth is real but it is granted, never assumed.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="letebrhan woldu">
+  <div class="ph"><img src="images/letebrhan-woldu.webp" alt="Portrait of Letebrhan Woldu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 80</span><span class="wave">Wave 3</span></div>
+    <h3>Letebrhan Woldu</h3>
+    <p class="meta">70s · Age 78<br>Keren, Eritrea — Tigrinya</p>
+    <p class="look">Enduring faith — church mothers, still point of every room.</p>
+    <p class="temp">Serene, devout in bearing, and quietly humorous about the frailties of everyone younger. She is the person companies seat at the centre of the room without discussing why.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="zhor berrada">
+  <div class="ph"><img src="images/zhor-berrada.webp" alt="Portrait of Zhor Berrada" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 81</span><span class="wave">Wave 3</span></div>
+    <h3>Zhor Berrada</h3>
+    <p class="meta">60s · Age 69<br>Chefchaouen, Morocco — Moroccan</p>
+    <p class="look">Blue-city serenity — healers, grandmothers who run households like small states.</p>
+    <p class="temp">Serene, shrewd, and quietly amused by younger people&#x27;s urgency. The grandmother everyone consults, including the director.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="sabah karrar">
+  <div class="ph"><img src="images/sabah-karrar.webp" alt="Portrait of Sabah Karrar" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 82</span><span class="wave">Wave 3</span></div>
+    <h3>Sabah Karrar</h3>
+    <p class="meta">80s · Age 84<br>Aswan, Egypt — Nubian</p>
+    <p class="look">The troupe&#x27;s eldest — river grandmothers, keepers of songs, women time consults.</p>
+    <p class="temp">Dignified, dry-witted, and entirely unbothered by fuss. Younger performers go quiet around her in the best way — to listen.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="ndoumbé sarr">
+  <div class="ph"><img src="images/ndoumbe-sarr.webp" alt="Portrait of Ndoumbé Sarr" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 83</span><span class="wave">Wave 3</span></div>
+    <h3>Ndoumbé Sarr</h3>
+    <p class="meta">Teen (13–19) · Age 15<br>Thiès, Senegal — Wolof</p>
+    <p class="look">Teen — bright defiance, daughters who answer back with facts.</p>
+    <p class="temp">Sharp, cheerful, and impossible to patronise. Does her homework — in the persona and in rehearsal — and expects everyone else to have done theirs.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="lemayian sadera">
+  <div class="ph"><img src="images/lemayian-sadera.webp" alt="Portrait of Lemayian Sadera" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 84</span><span class="wave">Wave 3</span></div>
+    <h3>Lemayian Sadera</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Narok, Kenya — Maasai</p>
+    <p class="look">Teen — tall stillness, young herders, princes of the plain.</p>
+    <p class="temp">Calm, observant, and dryly funny once he trusts the room. Moves through rehearsal the way he moves through country — economically.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="naa akweley tagoe">
+  <div class="ph"><img src="images/naa-akweley-tagoe.webp" alt="Portrait of Naa Akweley Tagoe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 85</span><span class="wave">Wave 3</span></div>
+    <h3>Naa Akweley Tagoe</h3>
+    <p class="meta">Teen (13–19) · Age 16<br>Accra, Ghana — Ga</p>
+    <p class="look">Teen lead — market-bright wit, traders&#x27; daughters, negotiators in training.</p>
+    <p class="temp">Witty, warm, and formidably organised for her age. Keeps a rehearsal room cheerful and a scene partner honest.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tawanda mutasa">
+  <div class="ph"><img src="images/tawanda-mutasa.webp" alt="Portrait of Tawanda Mutasa" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 86</span><span class="wave">Wave 3</span></div>
+    <h3>Tawanda Mutasa</h3>
+    <p class="meta">Teen (13–19) · Age 13<br>Harare, Zimbabwe — Shona</p>
+    <p class="look">Child performer — observant sons, young witnesses, boys who carry messages.</p>
+    <p class="temp">Watchful, gentle, and quietly funny. Notices everything in a rehearsal room and mentions about half of it, kindly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="aline ingabire">
+  <div class="ph"><img src="images/aline-ingabire.webp" alt="Portrait of Aline Ingabire" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 87</span><span class="wave">Wave 3</span></div>
+    <h3>Aline Ingabire</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>Kigali, Rwanda — Rwandan</p>
+    <p class="look">Young lead — composed modernity, students and young professionals carrying a rebuilt country.</p>
+    <p class="temp">Composed, warm underneath the polish, and quietly ambitious. Prepared to a standard that raises everyone else&#x27;s.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="babajide adeyeye">
+  <div class="ph"><img src="images/babajide-adeyeye.webp" alt="Portrait of Babajide Adeyeye" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 88</span><span class="wave">Wave 3</span></div>
+    <h3>Babajide Adeyeye</h3>
+    <p class="meta">20s · Age 21<br>Ibadan, Nigeria — Yoruba</p>
+    <p class="look">Young lead — princely energy, heirs and athletes, charm learning discipline.</p>
+    <p class="temp">Warm, confident, and competitive in the healthy way. Treats rehearsal like training — logged, measured, improved.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kabelo moremi">
+  <div class="ph"><img src="images/kabelo-moremi.webp" alt="Portrait of Kabelo Moremi" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 89</span><span class="wave">Wave 3</span></div>
+    <h3>Kabelo Moremi</h3>
+    <p class="meta">50s · Age 52<br>Gaborone, Botswana — Tswana</p>
+    <p class="look">Civic weight — councilmen, headmasters, fathers of the town meeting.</p>
+    <p class="temp">Measured, fair-minded, and funny in a way that ends arguments. The cast member younger actors instinctively call &#x27;sir&#x27; — then friend.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="nyeleti tembe">
+  <div class="ph"><img src="images/nyeleti-tembe.webp" alt="Portrait of Nyeleti Tembe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 90</span><span class="wave">Wave 3</span></div>
+    <h3>Nyeleti Tembe</h3>
+    <p class="meta">50s · Age 57<br>Maputo, Mozambique — Tsonga</p>
+    <p class="look">Formidable warmth — hospital matrons, church mothers, women who feed hundreds.</p>
+    <p class="temp">Generous, exacting, and funny at full volume when the moment earns it. Feeds people — cast, crew, characters — as a matter of policy.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="santigie bangura">
+  <div class="ph"><img src="images/santigie-bangura.webp" alt="Portrait of Santigie Bangura" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 91</span><span class="wave">Wave 3</span></div>
+    <h3>Santigie Bangura</h3>
+    <p class="meta">50s · Age 57<br>Freetown, Sierra Leone — Temne</p>
+    <p class="look">Harbour gravitas — port masters, union elders, men storms don&#x27;t move</p>
+    <p class="temp">Steady, dry, deeply trusted. The elder other actors check before a hard scene — his calm is contagious and entirely unperformed.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="luzia manuel">
+  <div class="ph"><img src="images/luzia-manuel.webp" alt="Portrait of Luzia Manuel" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 92</span><span class="wave">Wave 3</span></div>
+    <h3>Luzia Manuel</h3>
+    <p class="meta">20s · Age 23<br>Benguela, Angola — Ovimbundu</p>
+    <p class="look">Young lead — sea-light openness, teachers and singers at the start of everything</p>
+    <p class="temp">Bright, generous, quietly determined. First to learn everyone&#x27;s lines as well as her own; the troupe&#x27;s morning energy.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="hrefna jónsdóttir">
+  <div class="ph"><img src="images/hrefna-jonsdottir.webp" alt="Portrait of Hrefna Jónsdóttir" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 93</span><span class="wave">Wave 3</span></div>
+    <h3>Hrefna Jónsdóttir</h3>
+    <p class="meta">30s · Age 33<br>Reykjavík, Iceland — Icelandic</p>
+    <p class="look">Northern clarity — researchers, skippers&#x27; daughters, women of few exact words</p>
+    <p class="temp">Exact, self-contained, dryly funny at long intervals. Speaks rarely in company and precisely; trusted completely when she does.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="tengiz kapanadze">
+  <div class="ph"><img src="images/tengiz-kapanadze.webp" alt="Portrait of Tengiz Kapanadze" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 94</span><span class="wave">Wave 3</span></div>
+    <h3>Tengiz Kapanadze</h3>
+    <p class="meta">40s · Age 45<br>Tbilisi, Georgia — Georgian</p>
+    <p class="look">Polyphonic soul — choirmasters, vintners, men whose grief and joy both sing</p>
+    <p class="temp">Warm, musical, generous with food and feeling. The company&#x27;s supra host in spirit — every rehearsal ends at his table.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="sarnai batbold">
+  <div class="ph"><img src="images/sarnai-batbold.webp" alt="Portrait of Sarnai Batbold" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 95</span><span class="wave">Wave 3</span></div>
+    <h3>Sarnai Batbold</h3>
+    <p class="meta">20s · Age 29<br>Ulaanbaatar, Mongolia — Mongolian</p>
+    <p class="look">Steppe poise — diplomats, riders, women raised on horizons</p>
+    <p class="temp">Composed, observant, quietly humorous. Measures rooms the way riders read weather — early, accurately, without fuss.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="lembit tamm">
+  <div class="ph"><img src="images/lembit-tamm.webp" alt="Portrait of Lembit Tamm" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 96</span><span class="wave">Wave 3</span></div>
+    <h3>Lembit Tamm</h3>
+    <p class="meta">70s · Age 72<br>Tallinn, Estonia — Estonian</p>
+    <p class="look">Forest patience — shipwrights, archivists, grandfathers of the song festivals</p>
+    <p class="temp">Quiet, kind, unhurried to the bone. The grandfather the whole company adopts; his approval is earned and therefore prized.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="bláthnaid kelly">
+  <div class="ph"><img src="images/blathnaid-kelly.webp" alt="Portrait of Bláthnaid Kelly" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 97</span><span class="wave">Wave 3</span></div>
+    <h3>Bláthnaid Kelly</h3>
+    <p class="meta">60s · Age 62<br>Galway, Ireland — Irish</p>
+    <p class="look">Atlantic wit — publicans, solicitors, mothers who run the parish and the family firm</p>
+    <p class="temp">Sharp, funny, formidably kind. Runs any room she enters — cast, crew or parish hall — and is loved for it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="lautaro paredes">
+  <div class="ph"><img src="images/lautaro-paredes.webp" alt="Portrait of Lautaro Paredes" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 98</span><span class="wave">Wave 3</span></div>
+    <h3>Lautaro Paredes</h3>
+    <p class="meta">30s · Age 38<br>Valparaíso, Chile (Chilean (Mapuche heritage))</p>
+    <p class="look">Port-city fire — dock leaders, poets, men who organize</p>
+    <p class="temp">Fierce, loyal, funny in the picket-line way. Organises the cast&#x27;s football, its playlists and, when needed, its courage.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="mhairi drummond">
+  <div class="ph"><img src="images/mhairi-drummond.webp" alt="Portrait of Mhairi Drummond" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 99</span><span class="wave">Wave 3</span></div>
+    <h3>Mhairi Drummond</h3>
+    <p class="meta">20s · Age 24<br>Glasgow, Scotland — Scottish</p>
+    <p class="look">Young lead — quick-fire humour, nurses and organizers, warmth with edges</p>
+    <p class="temp">Warm, fast, fearless in a crisis. The troupe&#x27;s emergency laugh and its first volunteer for the night shift.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="warwick sloane">
+  <div class="ph"><img src="images/warwick-sloane.webp" alt="Portrait of Warwick Sloane" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 100</span><span class="wave">Wave 3</span></div>
+    <h3>Warwick Sloane</h3>
+    <p class="meta">50s · Age 55<br>Hobart, Australia — Australian</p>
+    <p class="look">Weathered ease — harbour masters, retired servicemen, men who fix things and people</p>
+    <p class="temp">Easygoing, dry, quietly protective. Fixes the set&#x27;s broken kettle and its broken morale with the same unhurried hands.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="solange bouchard">
+  <div class="ph"><img src="images/solange-bouchard.webp" alt="Portrait of Solange Bouchard" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 101</span><span class="wave">Wave 3</span></div>
+    <h3>Solange Bouchard</h3>
+    <p class="meta">40s · Age 47<br>Quebec City, Canada — Québécoise</p>
+    <p class="look">Winter elegance — archivists, headmistresses, women who keep the old city&#x27;s keys.</p>
+    <p class="temp">Composed, wry, and quietly formidable, with a dry humour that surfaces only when the work is secure.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="kyungho bae">
+  <div class="ph"><img src="images/kyungho-bae.webp" alt="Portrait of Kyungho Bae" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 102</span><span class="wave">Wave 3</span></div>
+    <h3>Kyungho Bae</h3>
+    <p class="meta">20s · Age 29<br>Daegu, South Korea — Korean</p>
+    <p class="look">Disciplined fire — young officers, athletes, men promoted past their years.</p>
+    <p class="temp">Focused, courteous, and fiercely self-critical, with a sudden grin that younger actors in a company follow. He trains like an athlete and prepares like a staff officer.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="velta ozola">
+  <div class="ph"><img src="images/velta-ozola.webp" alt="Portrait of Velta Ozola" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 103</span><span class="wave">Wave 3</span></div>
+    <h3>Velta Ozola</h3>
+    <p class="meta">60s · Age 68<br>Riga, Latvia — Latvian</p>
+    <p class="look">Song-keeper — choir grandmothers, women who carried a language through hard years.</p>
+    <p class="temp">Gentle, steadfast, and quietly humorous, with a singer&#x27;s patience for repetition until it is right. Companies settle around her the way choirs settle around a true pitch.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="froilán mamani">
+  <div class="ph"><img src="images/froilan-mamani.webp" alt="Portrait of Froilán Mamani" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 104</span><span class="wave">Wave 3</span></div>
+    <h3>Froilán Mamani</h3>
+    <p class="meta">70s · Age 73<br>Sucre, Bolivia — Quechua-Aymara</p>
+    <p class="look">High-altitude endurance — miners&#x27; elders, festival captains, men the mountain respects.</p>
+    <p class="temp">Serene, dryly funny, and unhurried in the way of men who have learned what actually matters. Younger actors measure their effort against his calm and quietly redo their work.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="lan anh nguyen">
+  <div class="ph"><img src="images/lan-anh-nguyen.webp" alt="Portrait of Lan Anh Nguyen" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 105</span><span class="wave">Wave 3</span></div>
+    <h3>Lan Anh Nguyen</h3>
+    <p class="meta">30s · Age 36<br>Hanoi, Vietnam — Vietnamese</p>
+    <p class="look">Composed precision — surgeons, translators, women who miss nothing.</p>
+    <p class="temp">Calm, exact, and quietly witty, with a translator&#x27;s respect for what words actually mean.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="vahagn petrosyan">
+  <div class="ph"><img src="images/vahagn-petrosyan.webp" alt="Portrait of Vahagn Petrosyan" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 106</span><span class="wave">Wave 3</span></div>
+    <h3>Vahagn Petrosyan</h3>
+    <p class="meta">50s · Age 50<br>Yerevan, Armenia — Armenian</p>
+    <p class="look">Stone and scripture — craftsmen, officers, men built like the churches they guard.</p>
+    <p class="temp">Solid, laconic, and unexpectedly tender once trusted, with a mason&#x27;s patience for work done properly. In company he fixes things — props, arguments, and younger actors&#x27; confidence.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="zhanar bekova">
+  <div class="ph"><img src="images/zhanar-bekova.webp" alt="Portrait of Zhanar Bekova" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 107</span><span class="wave">Wave 3</span></div>
+    <h3>Zhanar Bekova</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>Almaty, Kazakhstan — Kazakh</p>
+    <p class="look">Young lead — steppe brightness, students and athletes, first-generation everything.</p>
+    <p class="temp">Bright, determined, and funny, with a first-generation work ethic that makes directors trust her with a lead&#x27;s schedule. She asks elders questions and writes down the answers.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="zmago kovač">
+  <div class="ph"><img src="images/zmago-kovac.webp" alt="Portrait of Zmago Kovač" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 108</span><span class="wave">Wave 3</span></div>
+    <h3>Zmago Kovač</h3>
+    <p class="meta">70s · Age 76<br>Ljubljana, Slovenia — Slovenian</p>
+    <p class="look">Alpine dry wit — foresters, retired engineers, grandfathers with a workshop for every problem.</p>
+    <p class="temp">Dry, ingenious, and quietly kind, with a forester&#x27;s habit of looking at the whole hill before answering. Companies bring him broken props and broken scenes in the same spirit.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="carmela vella">
+  <div class="ph"><img src="images/carmela-vella.webp" alt="Portrait of Carmela Vella" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 109</span><span class="wave">Wave 3</span></div>
+    <h3>Carmela Vella</h3>
+    <p class="meta">50s · Age 58<br>Valletta, Malta — Maltese</p>
+    <p class="look">Harbour matriarch — women who run families, feasts, and half the street.</p>
+    <p class="temp">Warm, capable, and formidably organised, with a laugh that ends arguments better than rulings do. She feeds every company she joins and remembers everyone&#x27;s business kindly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="3" data-name="nuka møller">
+  <div class="ph"><img src="images/nuka-moller.webp" alt="Portrait of Nuka Møller" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 110</span><span class="wave">Wave 3</span></div>
+    <h3>Nuka Møller</h3>
+    <p class="meta">30s · Age 34<br>Nuuk, Greenland — Inuit</p>
+    <p class="look">Arctic calm — hunters, guides, men at home in white silence.</p>
+    <p class="temp">Calm, observant, and quietly humorous, with a guide&#x27;s instinct for who in the group is struggling. He speaks when it helps, which makes companies listen when he does.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="verlean hightower">
+  <div class="ph"><img src="images/verlean-hightower.webp" alt="Portrait of Verlean Hightower" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 111</span><span class="wave">Wave 4</span></div>
+    <h3>Verlean Hightower</h3>
+    <p class="meta">70s · Age 71<br>Greenville, Mississippi, USA — African-American</p>
+    <p class="look">Gospel matriarch — church mothers, grandmothers who hold the family line, women whose kitchen is a council chamber</p>
+    <p class="temp">Warm, unhurried, and immovable once decided. Feeds every company she joins and remembers every name.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="sylvania broussard">
+  <div class="ph"><img src="images/sylvania-broussard.webp" alt="Portrait of Sylvania Broussard" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 112</span><span class="wave">Wave 4</span></div>
+    <h3>Sylvania Broussard</h3>
+    <p class="meta">20s · Age 26<br>New Orleans, Louisiana, USA — Louisiana Creole</p>
+    <p class="look">Creole modern lead — young professionals, artists, women with two heritages and no apologies</p>
+    <p class="temp">Bright, grounded, and funny in two registers. Treats every set like a neighborhood — learns it fast and belongs quickly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="otelia crenshaw">
+  <div class="ph"><img src="images/otelia-crenshaw.webp" alt="Portrait of Otelia Crenshaw" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 113</span><span class="wave">Wave 4</span></div>
+    <h3>Otelia Crenshaw</h3>
+    <p class="meta">40s · Age 47<br>Birmingham, Alabama, USA — African-American</p>
+    <p class="look">Commanding professional — attorneys, principals, women who run the room they were underestimated in</p>
+    <p class="temp">Exact, courteous, and quietly formidable. Allies trust her completely; opponents underestimate her once.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="jonquil farrow">
+  <div class="ph"><img src="images/jonquil-farrow.webp" alt="Portrait of Jonquil Farrow" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 114</span><span class="wave">Wave 4</span></div>
+    <h3>Jonquil Farrow</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>Hampton, Virginia, USA — African-American</p>
+    <p class="look">Bright student lead — campus drama, sisters and daughters at the threshold of the adult world</p>
+    <p class="temp">Curious, diligent, and dryly funny. The company member who has read the whole script, including everyone else&#x27;s scenes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="marvella quarles">
+  <div class="ph"><img src="images/marvella-quarles.webp" alt="Portrait of Marvella Quarles" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 115</span><span class="wave">Wave 4</span></div>
+    <h3>Marvella Quarles</h3>
+    <p class="meta">50s · Age 58<br>St. Louis, Missouri, USA — African-American</p>
+    <p class="look">Union-hall authority — nurse-administrators, alderwomen, women who have chaired every meeting since 1989</p>
+    <p class="temp">Capable, fair, and funny at exactly the moment a tense room needs it. Keeps a list, checks it twice, forgets nothing.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="saretta holloway">
+  <div class="ph"><img src="images/saretta-holloway.webp" alt="Portrait of Saretta Holloway" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 116</span><span class="wave">Wave 4</span></div>
+    <h3>Saretta Holloway</h3>
+    <p class="meta">30s · Age 35<br>Oakland, California, USA — African-American</p>
+    <p class="look">Warm dramatic lead — teachers, social workers, mothers carrying two generations at once</p>
+    <p class="temp">Generous, exact about feelings, and funny in the way good teachers are — timing as kindness.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="caledonia ransom">
+  <div class="ph"><img src="images/caledonia-ransom.webp" alt="Portrait of Caledonia Ransom" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 117</span><span class="wave">Wave 4</span></div>
+    <h3>Caledonia Ransom</h3>
+    <p class="meta">Teen (13–19) · Age 15<br>Detroit, Michigan, USA — African-American</p>
+    <p class="look">Teen — students, daughters, young witnesses in family and school drama</p>
+    <p class="temp">Quiet, watchful, and dryly funny once comfortable. Takes direction literally and then surprises the director with the second take.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="theopolis givens">
+  <div class="ph"><img src="images/theopolis-givens.webp" alt="Portrait of Theopolis Givens" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 118</span><span class="wave">Wave 4</span></div>
+    <h3>Theopolis Givens</h3>
+    <p class="meta">60s · Age 66<br>Tuskegee, Alabama, USA — African-American</p>
+    <p class="look">Veteran dignity — retired officers, deacons, mentors whose bearing is a curriculum</p>
+    <p class="temp">Disciplined, courteous, and dryly amused by disorder. Younger actors stand straighter around him without being asked.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="delano pruitt">
+  <div class="ph"><img src="images/delano-pruitt.webp" alt="Portrait of Delano Pruitt" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 119</span><span class="wave">Wave 4</span></div>
+    <h3>Delano Pruitt</h3>
+    <p class="meta">30s · Age 39<br>Chicago, Illinois, USA — African-American</p>
+    <p class="look">Working lead — transit men, coaches, fathers whose competence is the family&#x27;s weather</p>
+    <p class="temp">Steady, funny, and allergic to self-pity — his own or anyone&#x27;s. The scene partner everyone wants in a two-hander.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="obadiah starks">
+  <div class="ph"><img src="images/obadiah-starks.webp" alt="Portrait of Obadiah Starks" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 120</span><span class="wave">Wave 4</span></div>
+    <h3>Obadiah Starks</h3>
+    <p class="meta">50s · Age 52<br>Kansas City, Missouri, USA — African-American</p>
+    <p class="look">Pastor-musician — clergy, choir directors, counselors whose sermon is also a song</p>
+    <p class="temp">Gentle, exact, and funny in the vestry after the service. Companies confide in him the way congregations do.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="tavius merritt">
+  <div class="ph"><img src="images/tavius-merritt.webp" alt="Portrait of Tavius Merritt" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 121</span><span class="wave">Wave 4</span></div>
+    <h3>Tavius Merritt</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Baltimore, Maryland, USA — African-American</p>
+    <p class="look">Teen — students, sons, young men deciding what kind of man the block gets</p>
+    <p class="temp">Earnest, observant, and quick with a grin once the scene breaks. Coaches say he asks the question that improves the rehearsal.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="roscoe delaney">
+  <div class="ph"><img src="images/roscoe-delaney.webp" alt="Portrait of Roscoe Delaney" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 122</span><span class="wave">Wave 4</span></div>
+    <h3>Roscoe Delaney</h3>
+    <p class="meta">70s · Age 79<br>New York City, New York, USA — African-American</p>
+    <p class="look">Harlem elder — jazz-generation grandfathers, retired tradesmen, men who remember the street before the towers</p>
+    <p class="temp">Dry, spry-minded, and entirely unimpressed by hurry. His corrections arrive as stories; his stories arrive as verdicts.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="alonzo pemberton">
+  <div class="ph"><img src="images/alonzo-pemberton.webp" alt="Portrait of Alonzo Pemberton" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 123</span><span class="wave">Wave 4</span></div>
+    <h3>Alonzo Pemberton</h3>
+    <p class="meta">30s · Age 30<br>Los Angeles, California, USA — African-American</p>
+    <p class="look">Modern leading man — officers, athletes-turned-professionals, young fathers with a service bearing</p>
+    <p class="temp">Exact, good-humoured, and generous with scene partners. Prepares like a professional; relaxes like a friend.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="4" data-name="septimus bell">
+  <div class="ph"><img src="images/septimus-bell.webp" alt="Portrait of Septimus Bell" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 124</span><span class="wave">Wave 4</span></div>
+    <h3>Septimus Bell</h3>
+    <p class="meta">40s · Age 45<br>Charleston, South Carolina, USA — Gullah-Geechee</p>
+    <p class="look">Gullah gravitas — harbor men, historians, quiet authority at the water&#x27;s edge</p>
+    <p class="temp">Calm, exact about names and histories, and quietly funny at a story&#x27;s expense — never a person&#x27;s.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="eudora bracey">
+  <div class="ph"><img src="images/eudora-bracey.webp" alt="Portrait of Eudora Bracey" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 125</span><span class="wave">Wave 5</span></div>
+    <h3>Eudora Bracey</h3>
+    <p class="meta">60s · Age 68<br>Memphis, Tennessee, USA — African-American</p>
+    <p class="look">Gospel matriarch — church mothers, retired principals, grandmothers who run the block.</p>
+    <p class="temp">Generous, exact about manners, funny in a way that sneaks up.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="trevell armour">
+  <div class="ph"><img src="images/trevell-armour.webp" alt="Portrait of Trevell Armour" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 126</span><span class="wave">Wave 5</span></div>
+    <h3>Trevell Armour</h3>
+    <p class="meta">40s · Age 41<br>Detroit, Michigan, USA — African-American</p>
+    <p class="look">Protective strength — mentors, coaches, fathers, men who stand between people and harm.</p>
+    <p class="temp">Steady, dry-humored, loyal to a fault.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="keturah lyles">
+  <div class="ph"><img src="images/keturah-lyles.webp" alt="Portrait of Keturah Lyles" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 127</span><span class="wave">Wave 5</span></div>
+    <h3>Keturah Lyles</h3>
+    <p class="meta">30s · Age 33<br>Chicago, Illinois, USA — African-American</p>
+    <p class="look">Brilliant advocate — attorneys, organizers, women who argue beautifully and win.</p>
+    <p class="temp">Quick, principled, mischievous under pressure.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="devereux baptiste">
+  <div class="ph"><img src="images/devereux-baptiste.webp" alt="Portrait of Devereux Baptiste" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 128</span><span class="wave">Wave 5</span></div>
+    <h3>Devereux Baptiste</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>New Orleans, Louisiana, USA — African-American · Creole heritage</p>
+    <p class="look">Musical prodigy — brass-band sons, students, young men with old souls.</p>
+    <p class="temp">Bright, respectful, quietly ambitious.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="willodean pryor">
+  <div class="ph"><img src="images/willodean-pryor.webp" alt="Portrait of Willodean Pryor" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 129</span><span class="wave">Wave 5</span></div>
+    <h3>Willodean Pryor</h3>
+    <p class="meta">50s · Age 52<br>Birmingham, Alabama, USA — African-American</p>
+    <p class="look">Knowing warmth — nurses, social workers, church administrators, women who see everything and say half.</p>
+    <p class="temp">Perceptive, unhurried, wickedly funny in private.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="5" data-name="lazarus cole">
+  <div class="ph"><img src="images/lazarus-cole.webp" alt="Portrait of Lazarus Cole" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 130</span><span class="wave">Wave 5</span></div>
+    <h3>Lazarus Cole</h3>
+    <p class="meta">20s · Age 26<br>Houston, Texas, USA — African-American</p>
+    <p class="look">Hungry intensity — boxers, strivers, young fathers, men with something to prove.</p>
+    <p class="temp">Driven, loyal, funnier than his face advertises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="othella quinney">
+  <div class="ph"><img src="images/othella-quinney.webp" alt="Portrait of Othella Quinney" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 139</span><span class="wave">Wave 6</span></div>
+    <h3>Othella Quinney</h3>
+    <p class="meta">70s · Age 72<br>Jackson, Mississippi, USA — African-American</p>
+    <p class="look">Retired-postmaster matriarch — grandmothers, church clerks, women who know every family's address and history.</p>
+    <p class="temp">Exact, warm, and amused by disorder she has already solved twice before.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="jessamine tolliver">
+  <div class="ph"><img src="images/jessamine-tolliver.webp" alt="Portrait of Jessamine Tolliver" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 140</span><span class="wave">Wave 6</span></div>
+    <h3>Jessamine Tolliver</h3>
+    <p class="meta">30s · Age 34<br>Richmond, Virginia, USA — African-American</p>
+    <p class="look">Warm dramatic lead — archivists, teachers, sisters who hold the family's papers and its peace.</p>
+    <p class="temp">Bright, organised, and funny in footnotes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="isom harrell">
+  <div class="ph"><img src="images/isom-harrell.webp" alt="Portrait of Isom Harrell" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 141</span><span class="wave">Wave 6</span></div>
+    <h3>Isom Harrell</h3>
+    <p class="meta">40s · Age 44<br>Columbia, South Carolina, USA — African-American</p>
+    <p class="look">Working lead — electricians, coaches, deacons whose competence is a form of care.</p>
+    <p class="temp">Steady, plainspoken, and quietly hilarious once the work is done.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="doretta funchess">
+  <div class="ph"><img src="images/doretta-funchess.webp" alt="Portrait of Doretta Funchess" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 142</span><span class="wave">Wave 6</span></div>
+    <h3>Doretta Funchess</h3>
+    <p class="meta">50s · Age 57<br>Mobile, Alabama, USA — African-American, Gulf Coast</p>
+    <p class="look">Commanding professional — charge nurses, port administrators, women who run Gulf Coast institutions.</p>
+    <p class="temp">Exact, courteous, and unhurried under pressure.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="zebedee larkin">
+  <div class="ph"><img src="images/zebedee-larkin.webp" alt="Portrait of Zebedee Larkin" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 143</span><span class="wave">Wave 6</span></div>
+    <h3>Zebedee Larkin</h3>
+    <p class="meta">70s · Age 73<br>Savannah, Georgia, USA — African-American</p>
+    <p class="look">Harbor elder — retired teachers, dockside grandfathers, men whose anecdotes are the town's archive.</p>
+    <p class="temp">Dry, spry-minded, and entirely unimpressed by hurry.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="keziah boudreaux">
+  <div class="ph"><img src="images/keziah-boudreaux.webp" alt="Portrait of Keziah Boudreaux" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 144</span><span class="wave">Wave 6</span></div>
+    <h3>Keziah Boudreaux</h3>
+    <p class="meta">Teen (13–19) · Age 16<br>Baton Rouge, Louisiana, USA — African-American</p>
+    <p class="look">Teen — students, daughters, young witnesses in family and school drama.</p>
+    <p class="temp">Quiet, watchful, and dryly funny once comfortable.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="jubal kendrick">
+  <div class="ph"><img src="images/jubal-kendrick.webp" alt="Portrait of Jubal Kendrick" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 145</span><span class="wave">Wave 6</span></div>
+    <h3>Jubal Kendrick</h3>
+    <p class="meta">20s · Age 24<br>Philadelphia, Pennsylvania, USA — African-American</p>
+    <p class="look">Young adult — hungry musical striver; session players, young fathers, men building a name.</p>
+    <p class="temp">Driven, loyal, and funnier than his intensity advertises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="sonnet delacroix">
+  <div class="ph"><img src="images/sonnet-delacroix.webp" alt="Portrait of Sonnet Delacroix" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 146</span><span class="wave">Wave 6</span></div>
+    <h3>Sonnet Delacroix</h3>
+    <p class="meta">20s · Age 27<br>Houston, Texas, USA — African-American, Louisiana Creole heritage</p>
+    <p class="look">Young adult lead — poets, junior attorneys, women whose soft voice carries a hard argument.</p>
+    <p class="temp">Quick, principled, and mischievous under pressure.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="adjoa frimpong">
+  <div class="ph"><img src="images/adjoa-frimpong.webp" alt="Portrait of Adjoa Frimpong" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 147</span><span class="wave">Wave 6</span></div>
+    <h3>Adjoa Frimpong</h3>
+    <p class="meta">20s · Age 29<br>Sunyani, Ghana — Akan</p>
+    <p class="look">Young adult lead — agronomists, radio hosts, women whose competence runs a whole district.</p>
+    <p class="temp">Capable, fair, and funny at exactly the moment a tense room needs it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="festus amukwaya">
+  <div class="ph"><img src="images/festus-amukwaya.webp" alt="Portrait of Festus Amukwaya" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 148</span><span class="wave">Wave 6</span></div>
+    <h3>Festus Amukwaya</h3>
+    <p class="meta">60s · Age 60<br>Walvis Bay, Namibia — Ovambo</p>
+    <p class="look">Character lead — harbor masters, union stewards, fathers whose laugh settles a dock.</p>
+    <p class="temp">Generous, funny, and exact about promises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="barongo mrema">
+  <div class="ph"><img src="images/barongo-mrema.webp" alt="Portrait of Barongo Mrema" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 149</span><span class="wave">Wave 6</span></div>
+    <h3>Barongo Mrema</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Mwanza, Tanzania — Sukuma</p>
+    <p class="look">Teen — lakeside students, fishermen's sons, young men deciding what the shore gets from them.</p>
+    <p class="temp">Earnest, observant, and quick with a grin once the scene breaks.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="chamari wickramasinghe">
+  <div class="ph"><img src="images/chamari-wickramasinghe.webp" alt="Portrait of Chamari Wickramasinghe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 150</span><span class="wave">Wave 6</span></div>
+    <h3>Chamari Wickramasinghe</h3>
+    <p class="meta">30s · Age 38<br>Kandy, Sri Lanka — Sinhalese</p>
+    <p class="look">Mid lead — physicians, tea-country matriarchs-in-training, women of precise kindness.</p>
+    <p class="temp">Composed, observant, and dryly funny once trust is earned.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="teodoro anaya">
+  <div class="ph"><img src="images/teodoro-anaya.webp" alt="Portrait of Teodoro Anaya" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 151</span><span class="wave">Wave 6</span></div>
+    <h3>Teodoro Anaya</h3>
+    <p class="meta">50s · Age 58<br>Oaxaca, Mexico — Zapotec heritage</p>
+    <p class="look">Character elder — craftsmen, mayordomos, grandfathers whose hands remember everything.</p>
+    <p class="temp">Patient, wry, and exact about materials and promises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="6" data-name="wiremu parata">
+  <div class="ph"><img src="images/wiremu-parata.webp" alt="Portrait of Wiremu Parata" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 152</span><span class="wave">Wave 6</span></div>
+    <h3>Wiremu Parata</h3>
+    <p class="meta">60s · Age 68<br>Wellington, New Zealand — Māori</p>
+    <p class="look">Elder statesman — kaumātua, retired captains, grandfathers whose word closes a meeting.</p>
+    <p class="temp">Serene, exacting, and amused by everything young.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="ozella vandiver">
+  <div class="ph"><img src="images/ozella-vandiver.webp" alt="Portrait of Ozella Vandiver" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 153</span><span class="wave">Wave 7</span></div>
+    <h3>Ozella Vandiver</h3>
+    <p class="meta">70s · Age 71<br>Meridian, Mississippi, USA — African-American</p>
+    <p class="look">Retired-principal matriarch — grandmothers, school principals, women whose word closes a family meeting.</p>
+    <p class="temp">Exact, warm, and amused by disorder she has already solved twice before.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="theron beckwith">
+  <div class="ph"><img src="images/theron-beckwith.webp" alt="Portrait of Theron Beckwith" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 154</span><span class="wave">Wave 7</span></div>
+    <h3>Theron Beckwith</h3>
+    <p class="meta">50s · Age 52<br>Flint, Michigan, USA — African-American</p>
+    <p class="look">Grounded working lead — plant foremen, union stewards, fathers whose steadiness is the family infrastructure.</p>
+    <p class="temp">Steady, plainspoken, and quietly funny once the work is done.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="luvenia chisolm">
+  <div class="ph"><img src="images/luvenia-chisolm.webp" alt="Portrait of Luvenia Chisolm" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 155</span><span class="wave">Wave 7</span></div>
+    <h3>Luvenia Chisolm</h3>
+    <p class="meta">30s · Age 38<br>Charlotte, North Carolina, USA — African-American</p>
+    <p class="look">Warm professional lead — social workers, bank managers, elder sisters who hold a family's papers and its peace.</p>
+    <p class="temp">Bright, organised, and funny in footnotes.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="quintrell maddox">
+  <div class="ph"><img src="images/quintrell-maddox.webp" alt="Portrait of Quintrell Maddox" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 156</span><span class="wave">Wave 7</span></div>
+    <h3>Quintrell Maddox</h3>
+    <p class="meta">20s · Age 29<br>Columbus, Georgia, USA — African-American</p>
+    <p class="look">Young adult — hungry striver; logistics drivers, young fathers, men building a name from a route and a plan.</p>
+    <p class="temp">Driven, loyal, and funnier than his intensity advertises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="berniece tuggle">
+  <div class="ph"><img src="images/berniece-tuggle.webp" alt="Portrait of Berniece Tuggle" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 157</span><span class="wave">Wave 7</span></div>
+    <h3>Berniece Tuggle</h3>
+    <p class="meta">60s · Age 63<br>Montgomery, Alabama, USA — African-American</p>
+    <p class="look">Commanding elder — retired judges' clerks, church mothers, women who have filed a city's history and remember all of it.</p>
+    <p class="temp">Exact, courteous, and unhurried under pressure.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="alvester purnell">
+  <div class="ph"><img src="images/alvester-purnell.webp" alt="Portrait of Alvester Purnell" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 158</span><span class="wave">Wave 7</span></div>
+    <h3>Alvester Purnell</h3>
+    <p class="meta">40s · Age 44<br>Nashville, Tennessee, USA — African-American</p>
+    <p class="look">Working lead — session-road crews, coaches, deacons whose competence is a form of care.</p>
+    <p class="temp">Steady, plainspoken, and quietly hilarious once the work is done.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="amaryllis finch">
+  <div class="ph"><img src="images/amaryllis-finch.webp" alt="Portrait of Amaryllis Finch" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 159</span><span class="wave">Wave 7</span></div>
+    <h3>Amaryllis Finch</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Shreveport, Louisiana, USA — African-American</p>
+    <p class="look">Teen — students, daughters, young witnesses in family and school drama.</p>
+    <p class="temp">Quiet, watchful, and dryly funny once comfortable.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="hosea brunson">
+  <div class="ph"><img src="images/hosea-brunson.webp" alt="Portrait of Hosea Brunson" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 160</span><span class="wave">Wave 7</span></div>
+    <h3>Hosea Brunson</h3>
+    <p class="meta">Teen (13–19) · Age 18<br>Greenville, South Carolina, USA — African-American</p>
+    <p class="look">Teen / young adult — lakeside students, young athletes, sons at decision points.</p>
+    <p class="temp">Earnest, observant, and quick with a grin once the scene breaks.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="naledi mofomobe">
+  <div class="ph"><img src="images/naledi-mofomobe.webp" alt="Portrait of Naledi Mofomobe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 161</span><span class="wave">Wave 7</span></div>
+    <h3>Naledi Mofomobe</h3>
+    <p class="meta">30s · Age 33<br>Maseru, Lesotho — Sotho</p>
+    <p class="look">Young adult lead — district officers, radio hosts, women whose competence runs a whole valley.</p>
+    <p class="temp">Capable, fair, and funny at exactly the moment a tense room needs it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="henok alemu">
+  <div class="ph"><img src="images/henok-alemu.webp" alt="Portrait of Henok Alemu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 162</span><span class="wave">Wave 7</span></div>
+    <h3>Henok Alemu</h3>
+    <p class="meta">40s · Age 41<br>Hawassa, Ethiopia — Ethiopian</p>
+    <p class="look">Mid lead — scholars, investigators, men whose quiet is a method.</p>
+    <p class="temp">Exact, dry, loyal.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="sujata karki">
+  <div class="ph"><img src="images/sujata-karki.webp" alt="Portrait of Sujata Karki" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 163</span><span class="wave">Wave 7</span></div>
+    <h3>Sujata Karki</h3>
+    <p class="meta">20s · Age 26<br>Kathmandu, Nepal — Nepali</p>
+    <p class="look">Young adult lead — physicians-in-training, mountain guides' daughters, women of precise kindness.</p>
+    <p class="temp">Composed, observant, and dryly funny once trust is earned.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="ezequiel fuentes">
+  <div class="ph"><img src="images/ezequiel-fuentes.webp" alt="Portrait of Ezequiel Fuentes" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 164</span><span class="wave">Wave 7</span></div>
+    <h3>Ezequiel Fuentes</h3>
+    <p class="meta">30s · Age 36<br>Puebla, Mexico — Mexican</p>
+    <p class="look">Character lead — fixers, chefs, charming threats whose smile is a negotiation.</p>
+    <p class="temp">Generous, restless, the room's engine.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="apophia namono">
+  <div class="ph"><img src="images/apophia-namono.webp" alt="Portrait of Apophia Namono" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 165</span><span class="wave">Wave 7</span></div>
+    <h3>Apophia Namono</h3>
+    <p class="meta">70s · Age 70<br>Jinja, Uganda — Basoga</p>
+    <p class="look">Community elder — market keepers, grandmothers, women whose calm settles a shore town.</p>
+    <p class="temp">Mischievous, serene, unshockable.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="7" data-name="tavita leilua">
+  <div class="ph"><img src="images/tavita-leilua.webp" alt="Portrait of Tavita Leilua" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 166</span><span class="wave">Wave 7</span></div>
+    <h3>Tavita Leilua</h3>
+    <p class="meta">60s · Age 60<br>Apia, Samoa — Samoan</p>
+    <p class="look">Elder statesman — matai, retired captains, grandfathers whose word closes a meeting.</p>
+    <p class="temp">Serene, exacting, and amused by everything young.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="zenobia crayton">
+  <div class="ph"><img src="images/zenobia-crayton.webp" alt="Portrait of Zenobia Crayton" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 167</span><span class="wave">Wave 8</span></div>
+    <h3>Zenobia Crayton</h3>
+    <p class="meta">70s · Age 76<br>Greenwood, Mississippi, USA — African-American</p>
+    <p class="look">Story-keeping matriarch — grandmothers, church historians, women who remember what a town agreed to forget.</p>
+    <p class="temp">Patient, exact, and quietly devastating when a story needs its last line.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="aquilla thorne">
+  <div class="ph"><img src="images/aquilla-thorne.webp" alt="Portrait of Aquilla Thorne" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 168</span><span class="wave">Wave 8</span></div>
+    <h3>Aquilla Thorne</h3>
+    <p class="meta">40s · Age 47<br>Cleveland, Ohio, USA — African-American</p>
+    <p class="look">Scholar-lead — professors, archivists, defence attorneys whose glasses come off when the real argument starts.</p>
+    <p class="temp">Precise, dry, and loyal to the evidence — in scenes and in company.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="corliss abernathy">
+  <div class="ph"><img src="images/corliss-abernathy.webp" alt="Portrait of Corliss Abernathy" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 169</span><span class="wave">Wave 8</span></div>
+    <h3>Corliss Abernathy</h3>
+    <p class="meta">30s · Age 35<br>Augusta, Georgia, USA — African-American</p>
+    <p class="look">Polished professional lead — news producers, surgeons, elder daughters who run the family group chat and the family.</p>
+    <p class="temp">Bright, organised, and funny in the margins of other people's chaos.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="ulysses brantley">
+  <div class="ph"><img src="images/ulysses-brantley.webp" alt="Portrait of Ulysses Brantley" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 170</span><span class="wave">Wave 8</span></div>
+    <h3>Ulysses Brantley</h3>
+    <p class="meta">70s · Age 70<br>St. Louis, Missouri, USA — African-American</p>
+    <p class="look">Elder raconteur — retired bandleaders, porch philosophers, grandfathers whose stories are evidence.</p>
+    <p class="temp">Unhurried, amused, and exact about which details of a story are load-bearing.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="verdine colfax">
+  <div class="ph"><img src="images/verdine-colfax.webp" alt="Portrait of Verdine Colfax" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 171</span><span class="wave">Wave 8</span></div>
+    <h3>Verdine Colfax</h3>
+    <p class="meta">20s · Age 26<br>Oakland, California, USA — African-American</p>
+    <p class="look">Young adult — radiant organiser; youth pastors, startup founders, women whose joy is a form of logistics.</p>
+    <p class="temp">Joyful, methodical, and first to volunteer for the unglamorous task.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="odell sampson">
+  <div class="ph"><img src="images/odell-sampson.webp" alt="Portrait of Odell Sampson" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 172</span><span class="wave">Wave 8</span></div>
+    <h3>Odell Sampson</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>Tulsa, Oklahoma, USA — African-American</p>
+    <p class="look">Teen / young adult — track athletes, apprentices, sons deciding what kind of man the family story needs next.</p>
+    <p class="temp">Earnest, watchful, and quicker to laugh than his intensity advertises.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="iona stillwell">
+  <div class="ph"><img src="images/iona-stillwell.webp" alt="Portrait of Iona Stillwell" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 173</span><span class="wave">Wave 8</span></div>
+    <h3>Iona Stillwell</h3>
+    <p class="meta">Teen (13–19) · Age 16<br>Winston-Salem, North Carolina, USA — African-American</p>
+    <p class="look">Teen — quiet witnesses; students, younger sisters, girls whose silence is attention, not absence.</p>
+    <p class="temp">Quiet, observant, and dryly funny once the room feels safe.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="cornelius vane">
+  <div class="ph"><img src="images/cornelius-vane.webp" alt="Portrait of Cornelius Vane" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 174</span><span class="wave">Wave 8</span></div>
+    <h3>Cornelius Vane</h3>
+    <p class="meta">70s · Age 74<br>Beaumont, Texas, USA — African-American</p>
+    <p class="look">Patriarch elder — retired port workers, deacons, grandfathers with a long memory of storms.</p>
+    <p class="temp">Serene, formidable, and tender exactly where tenderness is earned.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="ayodele falana">
+  <div class="ph"><img src="images/ayodele-falana.webp" alt="Portrait of Ayodele Falana" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 175</span><span class="wave">Wave 8</span></div>
+    <h3>Ayodele Falana</h3>
+    <p class="meta">30s · Age 31<br>Ibadan, Nigeria — Yoruba</p>
+    <p class="look">Regal young lead — market-association leaders, radio dramatists, women whose poise is a public office.</p>
+    <p class="temp">Composed, fair, and quietly funny at the exact moment a tense room needs it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="tendai chikafu">
+  <div class="ph"><img src="images/tendai-chikafu.webp" alt="Portrait of Tendai Chikafu" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 176</span><span class="wave">Wave 8</span></div>
+    <h3>Tendai Chikafu</h3>
+    <p class="meta">30s · Age 39<br>Harare, Zimbabwe — Shona</p>
+    <p class="look">Grounded mid lead — engineers, coaches, brothers who fix people by fixing things first.</p>
+    <p class="temp">Steady, observant, and dry — the brother everyone calls before they call anyone else.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="sigrun halvorsen">
+  <div class="ph"><img src="images/sigrun-halvorsen.webp" alt="Portrait of Sigrun Halvorsen" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 177</span><span class="wave">Wave 8</span></div>
+    <h3>Sigrun Halvorsen</h3>
+    <p class="meta">40s · Age 44<br>Bergen, Norway — Norwegian</p>
+    <p class="look">Dry northern lead — harbour masters, surgeons, women whose humour arrives like weather: suddenly, and from the sea.</p>
+    <p class="temp">Self-possessed, exact, and funny on a delay that makes it funnier.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="emiliano quiroga">
+  <div class="ph"><img src="images/emiliano-quiroga.webp" alt="Portrait of Emiliano Quiroga" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 178</span><span class="wave">Wave 8</span></div>
+    <h3>Emiliano Quiroga</h3>
+    <p class="meta">20s · Age 28<br>Córdoba, Argentina — Argentine</p>
+    <p class="look">Young adult — musical charmer; folk musicians, teachers, men whose warmth is a hometown export.</p>
+    <p class="temp">Easygoing, generous, and serious about the work underneath the grin.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="dilorom yusupova">
+  <div class="ph"><img src="images/dilorom-yusupova.webp" alt="Portrait of Dilorom Yusupova" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 179</span><span class="wave">Wave 8</span></div>
+    <h3>Dilorom Yusupova</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Samarkand, Uzbekistan — Uzbek</p>
+    <p class="look">Teen — students, young artisans, daughters carrying a craft older than the city around her.</p>
+    <p class="temp">Bright, curious, and steadier than the adults expect.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="8" data-name="seydou traoré">
+  <div class="ph"><img src="images/seydou-traore.webp" alt="Portrait of Seydou Traoré" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 180</span><span class="wave">Wave 8</span></div>
+    <h3>Seydou Traoré</h3>
+    <p class="meta">60s · Age 66<br>Bamako, Mali — Bambara</p>
+    <p class="look">Griot elder — storytellers, retired teachers, men whose profile has listened to a whole river town.</p>
+    <p class="temp">Measured, warm, and amused by everything hurried.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="althea meriwether">
+  <div class="ph"><img src="images/althea-meriwether.webp" alt="Portrait of Althea Meriwether" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 181</span><span class="wave">Wave 9</span></div>
+    <h3>Althea Meriwether</h3>
+    <p class="meta">Teen (13–19) · Age 17<br>Birmingham, Alabama, USA — African-American</p>
+    <p class="look">Teen lead — watchful daughters, young witnesses, girls who keep the family's receipts.</p>
+    <p class="temp">Steady, observant, and funny in a low key.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="cassius fenwick">
+  <div class="ph"><img src="images/cassius-fenwick.webp" alt="Portrait of Cassius Fenwick" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 182</span><span class="wave">Wave 9</span></div>
+    <h3>Cassius Fenwick</h3>
+    <p class="meta">20s · Age 24<br>New Orleans, Louisiana, USA — African-American</p>
+    <p class="look">Young adult — charming striver; trumpet players, tour guides, sons talking their way up.</p>
+    <p class="temp">Warm, quick, and loyal — the room's morale in human form.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="delphine marchand">
+  <div class="ph"><img src="images/delphine-marchand.webp" alt="Portrait of Delphine Marchand" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 183</span><span class="wave">Wave 9</span></div>
+    <h3>Delphine Marchand</h3>
+    <p class="meta">40s · Age 44<br>Baton Rouge, Louisiana, USA — African-American</p>
+    <p class="look">Matriarch-in-the-making — family attorneys, school principals, women who hold the deed and the history.</p>
+    <p class="temp">Composed, exact, and quietly funny at the moment a tense room needs it.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="thaddeus wilkes">
+  <div class="ph"><img src="images/thaddeus-wilkes.webp" alt="Portrait of Thaddeus Wilkes" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 184</span><span class="wave">Wave 9</span></div>
+    <h3>Thaddeus Wilkes</h3>
+    <p class="meta">50s · Age 58<br>Memphis, Tennessee, USA — African-American</p>
+    <p class="look">Weathered character lead — retired riverboat men, deacons, blues sidemen with a verdict in the profile.</p>
+    <p class="temp">Dry, patient, and devastatingly understated.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="evangeline satterfield">
+  <div class="ph"><img src="images/evangeline-satterfield.webp" alt="Portrait of Evangeline Satterfield" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 185</span><span class="wave">Wave 9</span></div>
+    <h3>Evangeline Satterfield</h3>
+    <p class="meta">70s · Age 75<br>Savannah, Georgia, USA — African-American</p>
+    <p class="look">Coastal matriarch — grandmothers, Gullah-Geechee keepers, women whose porch is a court.</p>
+    <p class="temp">Serene, exact, and unshockable.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="bartholomew hargrove">
+  <div class="ph"><img src="images/bartholomew-hargrove.webp" alt="Portrait of Bartholomew Hargrove" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 186</span><span class="wave">Wave 9</span></div>
+    <h3>Bartholomew Hargrove</h3>
+    <p class="meta">60s · Age 68<br>Detroit, Michigan, USA — African-American</p>
+    <p class="look">Loc'd elder — retired autoworkers, jazz elders, grandfathers whose hair is an archive.</p>
+    <p class="temp">Booming laugh, iron memory, zero patience for hurry.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="selah winslow">
+  <div class="ph"><img src="images/selah-winslow.webp" alt="Portrait of Selah Winslow" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 187</span><span class="wave">Wave 9</span></div>
+    <h3>Selah Winslow</h3>
+    <p class="meta">20s · Age 29<br>Philadelphia, Pennsylvania, USA — African-American</p>
+    <p class="look">Young adult lead — news anchors, young pastors' wives and young pastors, women mid-ascent.</p>
+    <p class="temp">Assured, warm, and funny in the margins of other people's chaos.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="jasper mendenhall">
+  <div class="ph"><img src="images/jasper-mendenhall.webp" alt="Portrait of Jasper Mendenhall" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 188</span><span class="wave">Wave 9</span></div>
+    <h3>Jasper Mendenhall</h3>
+    <p class="meta">Teen (13–19) · Age 16<br>Kansas City, Missouri, USA — African-American</p>
+    <p class="look">Teen — earnest younger brothers, robotics kids, sons carrying a question.</p>
+    <p class="temp">Earnest, curious, and quietly brave.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="clarisse ekindi">
+  <div class="ph"><img src="images/clarisse-ekindi.webp" alt="Portrait of Clarisse Ekindi" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 189</span><span class="wave">Wave 9</span></div>
+    <h3>Clarisse Ekindi</h3>
+    <p class="meta">50s · Age 50<br>Douala, Cameroon — Cameroonian</p>
+    <p class="look">Commanding mid-elder lead — port directors, market queens grown into ministers, mothers of nations.</p>
+    <p class="temp">Formidable, fair, and dryly amused by everything hurried.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="kagiso molefe">
+  <div class="ph"><img src="images/kagiso-molefe.webp" alt="Portrait of Kagiso Molefe" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 190</span><span class="wave">Wave 9</span></div>
+    <h3>Kagiso Molefe</h3>
+    <p class="meta">30s · Age 35<br>Gaborone, Botswana — Motswana</p>
+    <p class="look">Steady leading man — engineers, rangers, husbands and captains the crew trusts.</p>
+    <p class="temp">Steady, generous, and quietly funny.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="nyambura karanja">
+  <div class="ph"><img src="images/nyambura-karanja.webp" alt="Portrait of Nyambura Karanja" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 191</span><span class="wave">Wave 9</span></div>
+    <h3>Nyambura Karanja</h3>
+    <p class="meta">20s · Age 22<br>Nakuru, Kenya — Kenyan (Kikuyu)</p>
+    <p class="look">Young adult — radiant newcomer; athletes, medics-in-training, daughters with a plan.</p>
+    <p class="temp">Bright, determined, and generous — celebrates other people's wins loudly.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="aniruddha deshpande">
+  <div class="ph"><img src="images/aniruddha-deshpande.webp" alt="Portrait of Aniruddha Deshpande" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 192</span><span class="wave">Wave 9</span></div>
+    <h3>Aniruddha Deshpande</h3>
+    <p class="meta">50s · Age 58<br>Nagpur, India — Indian (Marathi)</p>
+    <p class="look">Wry scholar-elder — retired judges, railway men, uncles whose mustache has opinions.</p>
+    <p class="temp">Expansive, scholarly, kind.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="rinako hoshino">
+  <div class="ph"><img src="images/rinako-hoshino.webp" alt="Portrait of Rinako Hoshino" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 193</span><span class="wave">Wave 9</span></div>
+    <h3>Rinako Hoshino</h3>
+    <p class="meta">20s · Age 27<br>Sapporo, Japan — Japanese</p>
+    <p class="look">Young adult — precise minimalist; archivists, designers, women of few exact words.</p>
+    <p class="temp">Calm, exact, and dryly amused.</p>
+    
+  </div>
+</article>
+<article class="card" data-wave="9" data-name="baltazar quilodrán">
+  <div class="ph"><img src="images/baltazar-quilodran.webp" alt="Portrait of Baltazar Quilodrán" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">Nº 194</span><span class="wave">Wave 9</span></div>
+    <h3>Baltazar Quilodrán</h3>
+    <p class="meta">Teen (13–19) · Age 19<br>Valparaíso, Chile — Chilean</p>
+    <p class="look">Young adult — open-faced newcomer; port kids, buskers, first-voyage sailors.</p>
+    <p class="temp">Open, musical, and brave about hope.</p>
+    
+  </div>
+</article>
+<article class="card real" data-wave="real" data-name="james omar benjamin mullen">
+  <div class="ph"><img src="images/james-omar-benjamin-mullen.webp" alt="Portrait of James Omar Benjamin Mullen" loading="lazy"></div>
+  <div class="body">
+    <div class="badges"><span class="num">R-1 · Real-Person Talent</span><span class="wave">Real-Person Talent</span></div>
+    <h3>James Omar Benjamin Mullen <span class="called">“Omar”</span></h3>
+    <p class="meta">30s–40s<br>Pontiac, Michigan, USA — American</p>
+    <p class="look">Real-person talent — “Omar” · natural leader; drama / action / lifestyle</p>
+    <p class="temp">Confident and authoritative without forcing it — a natural leader&#x27;s ease. Versatile across drama, action, and lifestyle, with a professional, executive bearing.</p>
+    <p class="realnote">Real-person, likeness-based talent — not a synthetic actor. In the guild with his consent.</p>
+  </div>
+</article>
+  </div>
+  <p id="noresults">No guild members match that search.</p>
+</main>
+<footer>RI Studios — Synthetic Actor Division · Actors Guild. Biographies and credits in the guild ledger are persona fiction,
+written as a repertory actor's life; they are not real productions.<br>Internal viewing gallery — unlisted. The guild ledger remains the system of record.</footer>
+<script>
+  var wave = 'all', query = '';
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  function apply() {
+    var shown = 0;
+    cards.forEach(function(c) {
+      var okW = (wave === 'all') || (c.getAttribute('data-wave') === wave);
+      var okQ = !query || c.getAttribute('data-name').indexOf(query) !== -1;
+      var ok = okW && okQ;
+      c.classList.toggle('hidden', !ok);
+      if (ok) shown++;
+    });
+    document.getElementById('count').textContent = shown + (shown === 1 ? ' guild member shown' : ' guild members shown');
+    document.getElementById('noresults').style.display = shown ? 'none' : 'block';
+  }
+  document.querySelectorAll('.controls button').forEach(function(b) {
+    b.addEventListener('click', function() {
+      document.querySelectorAll('.controls button').forEach(function(x) { x.classList.remove('active'); });
+      b.classList.add('active'); wave = b.getAttribute('data-f'); apply();
+    });
+  });
+  document.getElementById('q').addEventListener('input', function(e) {
+    query = e.target.value.trim().toLowerCase(); apply();
+  });
+  apply();
+</script>
+</body>
+</html>
